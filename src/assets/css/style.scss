@@ -181,6 +181,96 @@ body {
                 }
             }
         }
+
+        section.recent-project-section {
+            height: 100vh;
+            width: 100%;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h2.section-title {
+                font-size: 40px;
+                font-weight: 600;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+                width: 100%;
+            }
+
+            div.slider {
+                width: 100%;
+                overflow-x: auto;
+
+                div.slider-inner {
+                    padding: 0 calc((100% - 1200px) / 2);
+                    width: max-content;
+
+                    div.slider-content {
+                        padding: 20px 20px;
+                        width: max-content;
+                        margin-top: 64px;
+                        
+                        a.project-card {
+                            display: block;
+                            border-radius: 20px;
+                            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+                            overflow: hidden;
+                            text-decoration: none;
+
+                            &.limit {
+                                max-width: 300px;
+                            }
+
+                            div.thumbnail {
+                                position: relative;
+                                width: 100%;
+                                padding-top: 56.25%;
+                                background-color: #5C5C5C;
+                                
+                                div.label {
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    height: 30px;
+                                    font-size: 12px;
+                                    color: #fff;
+                                    padding: 0 20px;
+                                    background: linear-gradient(110.94deg, #92C76D -15.98%, #1DA1F2 114.66%);
+                                    border-radius: 0 0 0 20px;
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+
+                                    span {
+                                        padding-bottom: 3px;
+                                        text-transform: capitalize;
+                                    }
+
+                                    &::after {
+                                        content: "";
+                                        width: 16px;
+                                        height: 16px;
+                                        display: inline-block;
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+
+                            h3.project-title {
+                                font-size: 24px;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                padding: 0 20px 20px;
+                                overflow: hidden;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

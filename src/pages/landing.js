@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import Socials from '../components/socials'
 import btn_down from '../assets/images/BTN_down.svg'
 import { Link } from 'react-router-dom'
+import ProjectCard from '../components/project-card'
 
 class Landing extends Component {
     componentDidMount() {
@@ -18,6 +19,7 @@ class Landing extends Component {
                     <Socials/>
                     <img className="btn-down" src={btn_down} alt="down button" />
                 </header>
+
                 <section id="about-me-section" className="about-me-section">
                     <div className="bg"></div>
 
@@ -32,6 +34,25 @@ class Landing extends Component {
                             </p>
 
                             <Link to="/about" className="btn main rounded">Read more</Link>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="recent-project-section">
+                    <h2 className="title section-title">Recent Project</h2>
+
+                    <div className="slider">
+                        <div className="slider-inner">
+                            <div className="slider-content">
+                                <ProjectCard 
+                                    title="Lorem ipsum dolor sit amet"
+                                    thumbnail="thmb.png"
+                                    label="developing"
+                                    type="android"
+                                    limit="limit"
+                                    href="#"
+                                />
+                            </div>
                         </div>
                     </div>
                 </section>
