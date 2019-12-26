@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, withRouter } from "react-router-dom"
+import '../assets/js/nav-control'
 
 class Nav extends React.Component {
     state = {}
@@ -24,6 +25,7 @@ class Nav extends React.Component {
 
     componentDidMount() {
         this.onLocationChange(window.location)
+        window.listenNavScroll()
         this.props.history.listen(location => this.onLocationChange(location))
     }
 
