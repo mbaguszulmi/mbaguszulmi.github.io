@@ -1,4 +1,5 @@
 @import url('../fonts/nunito/nunito.css');
+// @import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i&display=swap');
 
 * {
     box-sizing: border-box;
@@ -206,6 +207,64 @@ body {
                             }
                         }
                     }
+                }
+            }
+        }
+
+        div.about {
+            div.card {
+                padding: 40px;
+                background-color: #fff;
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 20px;
+
+                h3.card-title {
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 33px;
+                }
+            }
+
+            section.about-section {
+                padding: 90px 20px 20px;
+                width: 100%;
+                background-color: #fff;
+                background: center right / cover url('../images/header-bg.png');
+
+                div.about-section-inner {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    min-height: calc(90vh - 110px);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    img.photo {
+                        max-width: 336px;
+                        border-radius: 20px;
+                        margin-right: 40px;
+                    }
+    
+                    div.card {
+                        max-width: 754px;
+    
+                        p {
+                            color: #5C5C5C;
+                            font-size: 24px;
+                            line-height: 33px;
+                        }
+                    }
+                }
+            }
+
+            section.green-section {
+                padding: 20px;
+                background-color: #92C76D;
+
+                div.green-section-inner {
+                    max-width: 1200px;
+                    margin: 0 auto;
                 }
             }
         }

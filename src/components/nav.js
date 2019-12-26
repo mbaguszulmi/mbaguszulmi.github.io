@@ -6,6 +6,9 @@ class Nav extends React.Component {
     state = {}
 
     onLocationChange(location) {
+        document.body.scrollTop = 0
+        document.documentElement.scrollTop = 0
+
         if (location.pathname === "/") {
             this.setState({
                 activeIdx: 0
