@@ -105,37 +105,6 @@ body {
                 margin: 5px 0 20px;
             }
 
-            div.socials {
-                display: flex;
-                flex-direction: row;
-
-                a {
-                    width: 40px;
-                    height: 40px;
-                    margin: 0 10px;
-
-                    &.linkedin {
-                        background: center / contain url('../images/linkedinicon.svg');
-                    }
-
-                    &.facebook {
-                        background: center / contain url('../images/facebookicon.svg');
-                    }
-
-                    &.twitter {
-                        background: center / contain url('../images/twittericon.svg');
-                    }
-
-                    &.instagram {
-                        background: center / contain url('../images/instagramicon.svg');
-                    }
-
-                    &.github {
-                        background: center / contain url('../images/githubicon.svg');
-                    }
-                }
-            }
-
             img.btn-down {
                 margin-top: 60px;
                 width: 80px;
@@ -183,7 +152,7 @@ body {
         }
 
         section.recent-project-section {
-            height: 100vh;
+            min-height: 100vh;
             width: 100%;
             padding: 20px 0;
             display: flex;
@@ -202,6 +171,11 @@ body {
             div.slider {
                 width: 100%;
                 overflow-x: auto;
+                scrollbar-width: none;
+
+                &::-webkit-scrollbar {
+                    width: 0;
+                }
 
                 div.slider-inner {
                     padding: 0 calc((100% - 1200px) / 2);
@@ -211,61 +185,16 @@ body {
                         padding: 20px 20px;
                         width: max-content;
                         margin-top: 64px;
-                        
+                        display: flex;
+                        flex-direction: row;
+
                         a.project-card {
-                            display: block;
-                            border-radius: 20px;
-                            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-                            overflow: hidden;
-                            text-decoration: none;
-
-                            &.limit {
-                                max-width: 300px;
-                            }
-
-                            div.thumbnail {
-                                position: relative;
-                                width: 100%;
-                                padding-top: 56.25%;
-                                background-color: #5C5C5C;
-                                
-                                div.label {
-                                    position: absolute;
-                                    top: 0;
-                                    right: 0;
-                                    height: 30px;
-                                    font-size: 12px;
-                                    color: #fff;
-                                    padding: 0 20px;
-                                    background: linear-gradient(110.94deg, #92C76D -15.98%, #1DA1F2 114.66%);
-                                    border-radius: 0 0 0 20px;
-                                    display: flex;
-                                    flex-direction: row;
-                                    align-items: center;
-
-                                    span {
-                                        padding-bottom: 3px;
-                                        text-transform: capitalize;
-                                    }
-
-                                    &::after {
-                                        content: "";
-                                        width: 16px;
-                                        height: 16px;
-                                        display: inline-block;
-                                        margin-left: 5px;
-                                    }
-                                }
-                            }
-
-                            h3.project-title {
-                                font-size: 24px;
-                                text-overflow: ellipsis;
-                                white-space: nowrap;
-                                padding: 0 20px 20px;
-                                overflow: hidden;
-                                color: #000;
-                            }
+                            flex-shrink: 0;
+                            margin-right: 30px;
+                            user-select: none;
+                            -webkit-user-drag: none;
+                            -webkit-app-region: no-drag;
+                            cursor: default;
                         }
                     }
                 }
@@ -291,5 +220,92 @@ body {
 
     &.rounded {
         border-radius: 20px;
+    }
+}
+
+a.project-card {
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-decoration: none;
+
+    &.limit {
+        max-width: 300px;
+    }
+
+    div.thumbnail {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+        background-color: #5C5C5C;
+        
+        div.label {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 30px;
+            font-size: 12px;
+            color: #fff;
+            padding: 0 20px;
+            background: linear-gradient(110.94deg, #92C76D -15.98%, #1DA1F2 114.66%);
+            border-radius: 0 0 0 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            span {
+                padding-bottom: 3px;
+                text-transform: capitalize;
+            }
+
+            &::after {
+                content: "";
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    h3.project-title {
+        font-size: 24px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 0 20px 20px;
+        overflow: hidden;
+        color: #000;
+    }
+}
+
+div.socials {
+    display: flex;
+    flex-direction: row;
+
+    a {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+
+        &.linkedin {
+            background: center / contain url('../images/linkedinicon.svg');
+        }
+
+        &.facebook {
+            background: center / contain url('../images/facebookicon.svg');
+        }
+
+        &.twitter {
+            background: center / contain url('../images/twittericon.svg');
+        }
+
+        &.instagram {
+            background: center / contain url('../images/instagramicon.svg');
+        }
+
+        &.github {
+            background: center / contain url('../images/githubicon.svg');
+        }
     }
 }

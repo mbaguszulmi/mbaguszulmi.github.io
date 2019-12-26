@@ -136,42 +136,6 @@ body div.content header.header p.description {
   margin: 5px 0 20px;
 }
 
-body div.content header.header div.socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-body div.content header.header div.socials a {
-  width: 40px;
-  height: 40px;
-  margin: 0 10px;
-}
-
-body div.content header.header div.socials a.linkedin {
-  background: center/contain url("../images/linkedinicon.svg");
-}
-
-body div.content header.header div.socials a.facebook {
-  background: center/contain url("../images/facebookicon.svg");
-}
-
-body div.content header.header div.socials a.twitter {
-  background: center/contain url("../images/twittericon.svg");
-}
-
-body div.content header.header div.socials a.instagram {
-  background: center/contain url("../images/instagramicon.svg");
-}
-
-body div.content header.header div.socials a.github {
-  background: center/contain url("../images/githubicon.svg");
-}
-
 body div.content header.header img.btn-down {
   margin-top: 60px;
   width: 80px;
@@ -225,7 +189,7 @@ body div.content section.about-me-section div.about-me-content-wrapper div.about
 }
 
 body div.content section.recent-project-section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   padding: 20px 0;
   display: -webkit-box;
@@ -252,6 +216,11 @@ body div.content section.recent-project-section h2.section-title {
 body div.content section.recent-project-section div.slider {
   width: 100%;
   overflow-x: auto;
+  scrollbar-width: none;
+}
+
+body div.content section.recent-project-section div.slider::-webkit-scrollbar {
+  width: 0;
 }
 
 body div.content section.recent-project-section div.slider div.slider-inner {
@@ -267,38 +236,6 @@ body div.content section.recent-project-section div.slider div.slider-inner div.
   width: -moz-max-content;
   width: max-content;
   margin-top: 64px;
-}
-
-body div.content section.recent-project-section div.slider div.slider-inner div.slider-content a.project-card {
-  display: block;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  text-decoration: none;
-}
-
-body div.content section.recent-project-section div.slider div.slider-inner div.slider-content a.project-card.limit {
-  max-width: 300px;
-}
-
-body div.content section.recent-project-section div.slider div.slider-inner div.slider-content a.project-card div.thumbnail {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
-  background-color: #5C5C5C;
-}
-
-body div.content section.recent-project-section div.slider div.slider-inner div.slider-content a.project-card div.thumbnail div.label {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 30px;
-  font-size: 12px;
-  color: #fff;
-  padding: 0 20px;
-  background: linear-gradient(110.94deg, #92C76D -15.98%, #1DA1F2 114.66%);
-  border-radius: 0 0 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,31 +243,19 @@ body div.content section.recent-project-section div.slider div.slider-inner div.
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-body div.content section.recent-project-section div.slider div.slider-inner div.slider-content a.project-card div.thumbnail div.label span {
-  padding-bottom: 3px;
-  text-transform: capitalize;
-}
-
-body div.content section.recent-project-section div.slider div.slider-inner div.slider-content a.project-card div.thumbnail div.label::after {
-  content: "";
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  margin-left: 5px;
-}
-
-body div.content section.recent-project-section div.slider div.slider-inner div.slider-content a.project-card h3.project-title {
-  font-size: 24px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding: 0 20px 20px;
-  overflow: hidden;
-  color: #000;
+body div.content section.recent-project-section div.slider div.slider-inner div.slider-content a.project-card {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;
+  cursor: default;
 }
 
 .btn {
@@ -353,5 +278,105 @@ body div.content section.recent-project-section div.slider div.slider-inner div.
 
 .btn.rounded {
   border-radius: 20px;
+}
+
+a.project-card {
+  display: block;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+a.project-card.limit {
+  max-width: 300px;
+}
+
+a.project-card div.thumbnail {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  background-color: #5C5C5C;
+}
+
+a.project-card div.thumbnail div.label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  font-size: 12px;
+  color: #fff;
+  padding: 0 20px;
+  background: linear-gradient(110.94deg, #92C76D -15.98%, #1DA1F2 114.66%);
+  border-radius: 0 0 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a.project-card div.thumbnail div.label span {
+  padding-bottom: 3px;
+  text-transform: capitalize;
+}
+
+a.project-card div.thumbnail div.label::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+a.project-card h3.project-title {
+  font-size: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 20px 20px;
+  overflow: hidden;
+  color: #000;
+}
+
+div.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+div.socials a {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+div.socials a.linkedin {
+  background: center/contain url("../images/linkedinicon.svg");
+}
+
+div.socials a.facebook {
+  background: center/contain url("../images/facebookicon.svg");
+}
+
+div.socials a.twitter {
+  background: center/contain url("../images/twittericon.svg");
+}
+
+div.socials a.instagram {
+  background: center/contain url("../images/instagramicon.svg");
+}
+
+div.socials a.github {
+  background: center/contain url("../images/githubicon.svg");
 }
 /*# sourceMappingURL=style.css.map */

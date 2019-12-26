@@ -3,10 +3,12 @@ import Socials from '../components/socials'
 import btn_down from '../assets/images/BTN_down.svg'
 import { Link } from 'react-router-dom'
 import ProjectCard from '../components/project-card'
+import '../assets/js/slider'
 
 class Landing extends Component {
     componentDidMount() {
         document.title = "Muhammad Bagus Zulmi"
+        window.listenSlider()
     }
 
     render() {
@@ -44,6 +46,42 @@ class Landing extends Component {
                     <div className="slider">
                         <div className="slider-inner">
                             <div className="slider-content">
+                                <ProjectCard 
+                                    title="Lorem ipsum dolor sit amet"
+                                    thumbnail="thmb.png"
+                                    label="developing"
+                                    type="android"
+                                    limit="limit"
+                                    href="/about"
+                                />
+
+                                <ProjectCard 
+                                    title="Lorem ipsum dolor sit amet"
+                                    thumbnail="thmb.png"
+                                    label="developing"
+                                    type="android"
+                                    limit="limit"
+                                    href="#"
+                                />
+
+                                <ProjectCard 
+                                    title="Lorem ipsum dolor sit amet"
+                                    thumbnail="thmb.png"
+                                    label="developing"
+                                    type="android"
+                                    limit="limit"
+                                    href="#"
+                                />
+
+                                <ProjectCard 
+                                    title="Lorem ipsum dolor sit amet"
+                                    thumbnail="thmb.png"
+                                    label="developing"
+                                    type="android"
+                                    limit="limit"
+                                    href="#"
+                                />
+
                                 <ProjectCard 
                                     title="Lorem ipsum dolor sit amet"
                                     thumbnail="thmb.png"
