@@ -102,7 +102,7 @@ class About extends Component {
                         </div>
 
                         <div className="card education">
-                            <h3 className="title">Education</h3>
+                            <h3 className="card-title">Education</h3>
 
                             <div className="card-content">
                                 <div className="dot">
