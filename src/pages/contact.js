@@ -7,7 +7,11 @@ class Contact extends Component {
 
     render() {
         return (
-            <div><h1>Contact</h1></div>
+            <div className="contact">
+                <div className="contact-inner">
+                    This page is under development
+                </div>
+            </div>
         )
     }
 }

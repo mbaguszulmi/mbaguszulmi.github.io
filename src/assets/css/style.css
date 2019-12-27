@@ -539,6 +539,95 @@ body div.content div.projects-page div.project-inner {
   grid-gap: 20px;
 }
 
+body div.content div.project-detail {
+  padding: 110px 20px 40px;
+}
+
+body div.content div.project-detail div.project-detail-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body div.content div.project-detail div.project-detail-inner div.thumbnail {
+  width: 100%;
+  padding-top: 56.25%;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+body div.content div.project-detail div.project-detail-inner div.thumbnail div.status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  font-size: 12px;
+  color: #fff;
+  padding: 0 20px;
+  background: linear-gradient(110.94deg, #92C76D -15.98%, #1DA1F2 114.66%);
+  border-radius: 0 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body div.content div.project-detail div.project-detail-inner div.thumbnail div.status span {
+  padding-bottom: 3px;
+  text-transform: capitalize;
+}
+
+body div.content div.project-detail div.project-detail-inner div.thumbnail div.status::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+body div.content div.project-detail div.project-detail-inner div.thumbnail div.status.android::before {
+  background: center/contain url("../images/ant-design_android-fill.svg");
+}
+
+body div.content div.project-detail div.project-detail-inner div.thumbnail div.status.web::before {
+  background: center/contain url("../images/mdi_web.svg");
+}
+
+body div.content div.project-detail div.project-detail-inner div.description {
+  font-size: 20px;
+  line-height: 30px;
+  color: #5c5c5c;
+}
+
+body div.content div.contact {
+  padding: 110px 20px 40px;
+}
+
+body div.content div.contact div.contact-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(90vh - 150px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body footer.footer div.footer-column {
   padding: 20px;
   background-color: #F7F7F7;
@@ -662,6 +751,10 @@ div.progress-bar div.percentage {
 
 .btn.rounded {
   border-radius: 20px;
+}
+
+.btn.inline {
+  display: inline-block;
 }
 
 a.project-card {
