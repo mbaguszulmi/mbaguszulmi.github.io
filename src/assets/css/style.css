@@ -372,6 +372,7 @@ body div.content div.about section.green-section div.green-section-inner div.car
 
 body div.content div.about section.green-section div.green-section-inner div.card.profile div.content-item span {
   margin-bottom: 15px;
+  line-height: 20px;
 }
 
 body div.content div.about section.green-section div.green-section-inner div.card.education div.card-content {
@@ -477,6 +478,7 @@ body div.content div.about section.orange-section div.orange-section-inner div.c
 
 body div.content div.about section.orange-section div.orange-section-inner div.card.experience-card div.card-content div.experience div.experience-description {
   font-size: 14px;
+  line-height: 18px;
 }
 
 body div.content div.about section.skill-section {
