@@ -7,10 +7,43 @@ import mail_icon from '../assets/images/ic_round-mail.svg'
 import born_icon from '../assets/images/birthday-cake.svg'
 import dot_progress from '../assets/images/dot_progress.svg'
 import ProgressBar from '../components/progress-bar'
+import Api from '../assets/js/api'
+import SkillCard from '../components/skill-card'
 
 class About extends Component {
+    state = {}
     componentDidMount() {
         document.title = "About Me | Muhammad Bagus Zulmi"
+        
+        Api.getCertificate().then(data => {
+            let certificateElems = []
+
+            data.forEach(certificate => {
+                certificateElems.push(
+                    <a key={certificate.url} href={certificate.url} rel="noopener noreferrer" target="_blank" title={certificate.name}>
+                        <img className="certificate-img" src={certificate.url} alt="certificate" />
+                    </a>
+                )
+            });
+            
+            this.setState({
+                certificates: certificateElems
+            })
+        })
+
+        Api.getSkills().then(data => {
+            let skillElems = []
+
+            data.forEach(skill => {
+                skillElems.push(
+                    <SkillCard skillName={skill.skill_name} percent={`${skill.percent}%`} skillImage={skill.thumbnail}/>
+                )
+            });
+            
+            this.setState({
+                skills: skillElems
+            })
+        })
     }
 
     render() {
@@ -18,7 +51,7 @@ class About extends Component {
             <div className="about">
                 <section className="about-section">
                     <div className="about-section-inner">
-                        <img className="photo" src={pearl} alt="my photo" />
+                        <img className="my-photo" src={pearl} alt="mbz" />
 
                         <div className="card">
                             <h3 className="card-title">About me</h3>
@@ -178,7 +211,14 @@ class About extends Component {
                     <div className="skill-section-inner">
                         <h3 className="title">Skill Certification</h3>
 
+                        <div className="certificate">
+                            {this.state.certificates}
+                        </div>
+
                         <h3 className="title">Skills</h3>
+                        <div className="skills">
+                            {this.state.skills}
+                        </div>
                     </div>
                 </section>
             </div>

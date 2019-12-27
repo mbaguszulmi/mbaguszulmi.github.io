@@ -240,7 +240,7 @@ body {
                     justify-content: space-between;
                     align-items: center;
 
-                    img.photo {
+                    img.my-photo {
                         max-width: 336px;
                         border-radius: 20px;
                         margin-right: 40px;
@@ -403,6 +403,39 @@ body {
                     }
                 }
             }
+
+            section.skill-section {
+                padding: 20px;
+                background-color: #fff;
+
+                div.skill-section-inner {
+                    max-width: 1200px;
+                    margin: 0 auto;
+
+                    div.certificate {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                        grid-gap: 20px;
+
+                        a {
+                            position: relative;
+                            overflow: hidden;
+                            border-radius: 20px;
+                            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+
+                    div.skills {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                        grid-gap: 20px;
+                    }
+                }
+            }
         }
     }
 
@@ -458,6 +491,31 @@ body {
             font-size: 20px;
             color: #fff;
             background: linear-gradient(106.37deg, #A363CB -8.15%, #E2B38C 123.43%);
+        }
+    }
+}
+
+div.skill-card {
+    background-color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    overflow: hidden;
+
+    div.thumbnail {
+        width: 100%;
+        padding-top: 100%;
+        background-color: #5c5c5c;
+        background-position: center;
+        background-size: cover;
+    }
+
+    div.card-content {
+        padding: 10px 20px 20px;
+
+        h4.skill-name {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
     }
 }
