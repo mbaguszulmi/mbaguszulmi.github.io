@@ -445,6 +445,10 @@ body {
                 }
             }
         }
+
+        div.project-page {
+            
+        }
     }
 
     footer.footer {
@@ -572,7 +576,7 @@ a.project-card {
     text-decoration: none;
 
     &.limit {
-        max-width: 300px;
+        width: 300px;
     }
 
     div.thumbnail {

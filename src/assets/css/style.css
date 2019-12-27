@@ -660,7 +660,7 @@ a.project-card {
 }
 
 a.project-card.limit {
-  max-width: 300px;
+  width: 300px;
 }
 
 a.project-card div.thumbnail {

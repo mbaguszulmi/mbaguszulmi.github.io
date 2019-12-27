@@ -4,11 +4,37 @@ import btn_down from '../assets/images/BTN_down.svg'
 import { Link } from 'react-router-dom'
 import ProjectCard from '../components/project-card'
 import '../assets/js/slider'
+import Api from '../assets/js/api'
 
 class Landing extends Component {
+    state = {}
+
     componentDidMount() {
         document.title = "Muhammad Bagus Zulmi"
         window.listenSlider()
+
+        Api.getProjects().then(data => {
+            let projectElems = []
+
+            data.forEach((project, index) => {
+                if (index > 4) return
+
+                projectElems.push(
+                    <ProjectCard 
+                        title={project.project_name}
+                        thumbnail={project.thumbnail_url}
+                        label={project.status}
+                        type={project.type}
+                        limit="limit"
+                        href={`/projects/${index+1}`}
+                    />
+                )
+            })
+
+            this.setState({
+                projects: projectElems
+            })
+        })
     }
 
     render() {
@@ -46,50 +72,7 @@ class Landing extends Component {
                     <div className="slider">
                         <div className="slider-inner">
                             <div className="slider-content">
-                                <ProjectCard 
-                                    title="Lorem ipsum dolor sit amet"
-                                    thumbnail="thmb.png"
-                                    label="developing"
-                                    type="android"
-                                    limit="limit"
-                                    href="/about"
-                                />
-
-                                <ProjectCard 
-                                    title="Lorem ipsum dolor sit amet"
-                                    thumbnail="thmb.png"
-                                    label="developing"
-                                    type="android"
-                                    limit="limit"
-                                    href="#"
-                                />
-
-                                <ProjectCard 
-                                    title="Lorem ipsum dolor sit amet"
-                                    thumbnail="thmb.png"
-                                    label="developing"
-                                    type="android"
-                                    limit="limit"
-                                    href="#"
-                                />
-
-                                <ProjectCard 
-                                    title="Lorem ipsum dolor sit amet"
-                                    thumbnail="thmb.png"
-                                    label="developing"
-                                    type="android"
-                                    limit="limit"
-                                    href="#"
-                                />
-
-                                <ProjectCard 
-                                    title="Lorem ipsum dolor sit amet"
-                                    thumbnail="thmb.png"
-                                    label="developing"
-                                    type="android"
-                                    limit="limit"
-                                    href="#"
-                                />
+                                {this.state.projects}
                             </div>
                         </div>
                     </div>
