@@ -735,6 +735,8 @@ div.socials {
 }
 
 div.socials a {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 40px;
   height: 40px;
   margin: 0 10px;

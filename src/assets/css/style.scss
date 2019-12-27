@@ -635,6 +635,7 @@ div.socials {
     flex-direction: row;
 
     a {
+        flex-shrink: 0;
         width: 40px;
         height: 40px;
         margin: 0 10px;
