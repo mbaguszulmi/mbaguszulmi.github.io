@@ -1,0 +1,128 @@
+[
+    {
+        "project_name": "React PWA Portfolio Site",
+        "type": "web",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/portfolio-react.png",
+        "source": {
+            "url": "https://github.com/mbaguszulmi/mbaguszulmi.github.io/tree/development",
+            "type": "git"
+        },
+        "preview": {
+            "url": "https://mbaguszulmi.github.io",
+            "type": "live"
+        },
+        "description": "<p>This site is built for my portfolio. This website made with react and have ability to work in offline mode, because this site is implmented with PWA (Progressive Web Apps). Currently this site is being developed and still have many bugs. You can see the source code in my github repository inside development or alpha branch.</p>"
+    },
+    {
+        "project_name": "Premiere League PWA",
+        "type": "web",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/premiere-league-pwa.png",
+        "source": {
+            "url": "https://github.com/mbaguszulmi/premier-league-PWA",
+            "type": "git"
+        },
+        "preview": {
+            "url": "https://premiere-league-2f9f7.firebaseapp.com/",
+            "type": "live"
+        },
+        "description": "<p>This site is built for Dicoding PWA Course assignment. This site built with materialize css framework and using workbox for caching strategy. The content of this site is about information of Premiere League, Standings, Teams, and match schedules. In this site you can also save your favorite teams because it's implementing IndexedDB. If you want to see the source code, you can visit my repository on github with link above.</p>"
+    },
+    {
+        "project_name": "TripStory Native Android Apps",
+        "type": "android",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/tripstory.png",
+        "source": {
+            "url": "https://github.com/mbaguszulmi/TripStory",
+            "type": "git"
+        },
+        "preview": {
+            "url": "https://github.com/mbaguszulmi/TripStory/releases",
+            "type": "download"
+        },
+        "description": "<p>This app named \"Trip Story\", built with android studio (in kotlin language). This app built for assignment of Dicoding Beginer Android Course. In this app, we can view related trip story. Because this is beginer course, so the app is static only. The list in homepage built with RecyclerView. You can view sourcecode and download preview app in link above.</p>"
+    },
+    {
+        "project_name": "Neuroevolution Car",
+        "type": "web",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/neuro-car.png",
+        "source": {
+            "url": "https://github.com/mbaguszulmi/neuro-car",
+            "type": "git"
+        },
+        "preview": {
+            "url": "https://mbaguszulmi.github.io/neuro-car/test.html",
+            "type": "live"
+        },
+        "description": "<p>Neuro Car is project about self driving car using Neural Network and Genetic Algorithm. This project is built for final assignment in my University. It's using 5 sensors to read the road. I'm using 100 individual in a population for training using genetic algoritm. The source code can be viewed in link above.</p>"
+    },
+    {
+        "project_name": "Muslim Compass Android Flutter Apps",
+        "type": "android",
+        "status": "developing",
+        "thumbnail_url": "/assets/images/projects/muslimcompass.png",
+        "source": {
+            "url": "https://github.com/mbaguszulmi/muslim-compass",
+            "type": "git"
+        },
+        "preview": null,
+        "description": "<p>This app named \"Muslim Compass\", built with Flutter framework. But I decided to built only on Android because of limited device. Currently, this project is still developing in my github. And in this project, I'm using Travis CI/CD for helping my development workflow. You can see the source code of this app in the link above.</p>"
+    },
+    {
+        "project_name": "Web UKK for SMK Ibnu Abbas",
+        "type": "web",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/webukk.png",
+        "source": null,
+        "preview": {
+            "url": "https://webukk.000webhostapp.com/",
+            "type": "live"
+        },
+        "description": "<p>This site built for helping SMK Ibnu Abbas, Bantur, Malang. This site will guide students to train UKK TKJ. Containing teory of mikrotik, quiz, and recap. Built with codeigniter php framework, font awesme icon, and pure css. By the way, I built this site with my friend Yahya Amirudin. His job is designing the UI/UX of this site. Because this site is belong to SMK Ibnu Abbas, I can't give you the source code. But you can visit this preview site in the link above.</p>"
+    },
+    {
+        "project_name": "E-Arsip Information System",
+        "type": "web",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/earsip.jpg",
+        "source": {
+            "url": "https://gitlab.com/mbaguszulmi/e-arsip",
+            "type": "git"
+        },
+        "preview": {
+            "url": "https://earsip123.000webhostapp.com",
+            "type": "live"
+        },
+        "description": "<p>This site is about managing inbox and outbox letter. This site built for my freelance job. Built with my team with 3 members. This site made with codeigniter PHP Framework. This site also hav pure css design. If you want to see source code of this project, visit link above.</p>"
+    },
+    {
+        "project_name": "My Study Information System",
+        "type": "web",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/mystudy.png",
+        "source": {
+            "url": "https://gitlab.com/mbaguszulmi/mystudy",
+            "type": "git"
+        },
+        "preview": {
+            "url": "https://mystudy123.000webhostapp.com/",
+            "type": "live"
+        },
+        "description": "<p>My Study is E-Learning Information System. Built with codeigniter and pure css. This information system is built for assignment of Software Engineering Course in my University. Source code can be viewed in link above.</p>"
+    },
+    {
+        "project_name": "Madani Citizine Android App",
+        "type": "web",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/madanicitizine.png",
+        "source": null,
+        "preview": {
+            "url": "https://play.google.com/store/apps/details?id=id.ac.um.fis.madanie_zine&hl=uz",
+            "type": "download"
+        },
+        "description": "<p>This is my first Android Project. And I working with my teacher in my University. This app built for competition in Jurusan HKN, Universitas Negeri Malang. Because this is proprietary software, I can't share the source code. Unfortunately, this project is abandoned, so I can officially says that this app is deprecated. You can view this app in play store with the link above.</p>"
+    }
+]
