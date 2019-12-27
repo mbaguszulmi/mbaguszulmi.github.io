@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c792a69e.chunk.css",
+    "main.js": "/static/js/main.6966b7b4.chunk.js",
+    "main.js.map": "/static/js/main.6966b7b4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c667adde.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c667adde.js.map",
+    "static/js/2.b1c005ee.chunk.js": "/static/js/2.b1c005ee.chunk.js",
+    "static/js/2.b1c005ee.chunk.js.map": "/static/js/2.b1c005ee.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b0c3ccdae3ad5bd26bb949b1d61bb15f.js": "/precache-manifest.b0c3ccdae3ad5bd26bb949b1d61bb15f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.c792a69e.chunk.css.map": "/static/css/main.c792a69e.chunk.css.map",
+    "static/js/2.b1c005ee.chunk.js.LICENSE": "/static/js/2.b1c005ee.chunk.js.LICENSE",
+    "static/media/BTN_down.svg": "/static/media/BTN_down.191c9214.svg",
+    "static/media/style.css": "/static/media/twittericon.11063104.svg",
+    "static/media/birthday-cake.svg": "/static/media/birthday-cake.94e99ed6.svg",
+    "static/media/dot_progress.svg": "/static/media/dot_progress.34e4f662.svg",
+    "static/media/ic_round-mail.svg": "/static/media/ic_round-mail.c8f34c4b.svg",
+    "static/media/location_pin.svg": "/static/media/location_pin.f268baa3.svg",
+    "static/media/logo.png": "/static/media/logo.857a16bb.png",
+    "static/media/mdi_web_tiny.svg": "/static/media/mdi_web_tiny.6c3be853.svg",
+    "static/media/tel_icon.svg": "/static/media/tel_icon.dc121ae1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c667adde.js",
+    "static/js/2.b1c005ee.chunk.js",
+    "static/css/main.c792a69e.chunk.css",
+    "static/js/main.6966b7b4.chunk.js"
+  ]
+}
