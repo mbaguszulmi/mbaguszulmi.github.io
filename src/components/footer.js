@@ -20,7 +20,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="footer-content stay-connected">
-                        <h3 className="footer-title">Usefull Links</h3>
+                        <h3 className="footer-title">Stay Connected</h3>
                         <Socials/>
                     </div>
                 </div>

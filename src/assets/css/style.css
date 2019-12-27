@@ -480,13 +480,19 @@ body div.content div.about section.orange-section div.orange-section-inner div.c
 }
 
 body div.content div.about section.skill-section {
-  padding: 20px;
+  padding: 20px 20px 40px;
   background-color: #fff;
 }
 
 body div.content div.about section.skill-section div.skill-section-inner {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+body div.content div.about section.skill-section div.skill-section-inner h3.title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
 }
 
 body div.content div.about section.skill-section div.skill-section-inner div.certificate {
@@ -602,6 +608,7 @@ div.skill-card div.card-content h4.skill-name {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  line-height: 30px;
 }
 
 div.progress-bar {

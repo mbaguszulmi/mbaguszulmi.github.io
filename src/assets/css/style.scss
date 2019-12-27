@@ -405,12 +405,18 @@ body {
             }
 
             section.skill-section {
-                padding: 20px;
+                padding: 20px 20px 40px;
                 background-color: #fff;
 
                 div.skill-section-inner {
                     max-width: 1200px;
                     margin: 0 auto;
+
+                    h3.title {
+                        font-weight: 600;
+                        font-size: 30px;
+                        line-height: 41px;
+                    }
 
                     div.certificate {
                         display: grid;
@@ -516,6 +522,7 @@ div.skill-card {
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
+            line-height: 30px;
         }
     }
 }
