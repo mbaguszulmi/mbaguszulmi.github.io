@@ -446,8 +446,16 @@ body {
             }
         }
 
-        div.project-page {
-            
+        div.projects-page {
+            padding: 110px 20px 40px;
+
+            div.project-inner {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+                grid-gap: 20px;
+            }
         }
     }
 
