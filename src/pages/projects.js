@@ -12,8 +12,6 @@ class Projects extends Component {
             let projectElems = []
 
             data.forEach((project, index) => {
-                if (index > 4) return
-
                 projectElems.push(
                     <ProjectCard 
                         title={project.project_name}
