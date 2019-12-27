@@ -24,6 +24,11 @@ class Nav extends React.Component {
                 activeIdx: 2
             })
         }
+        else if (location.pathname === "/contact" || location.pathname.indexOf("/project") !== -1) {
+            this.setState({
+                activeIdx: 3
+            })
+        }
     }
 
     componentDidMount() {
@@ -44,6 +49,7 @@ class Nav extends React.Component {
                         <Link to="/" className={`nav-link ${this.state.activeIdx === 0 ? "active" : ""}`}>Home</Link>
                         <Link to="/about" className={`nav-link ${this.state.activeIdx === 1 ? "active" : ""}`}>About Me</Link>
                         <Link to="/projects" className={`nav-link ${this.state.activeIdx === 2 ? "active" : ""}`}>Projects</Link>
+                        <Link to="/contact" className={`nav-link ${this.state.activeIdx === 3 ? "active" : ""}`}>Contact</Link>
                     </div>
                 </div>
     
@@ -52,6 +58,7 @@ class Nav extends React.Component {
                         <Link to="/" className={`nav-link ${this.state.activeIdx === 0 ? "active" : ""}`}>Home</Link>
                         <Link to="/about" className={`nav-link ${this.state.activeIdx === 1 ? "active" : ""}`}>About Me</Link>
                         <Link to="/projects" className={`nav-link ${this.state.activeIdx === 2 ? "active" : ""}`}>Projects</Link>
+                        <Link to="/contact" className={`nav-link ${this.state.activeIdx === 3 ? "active" : ""}`}>Contact</Link>
                     </div>
                 </div>
             </nav>

@@ -5,6 +5,8 @@ import web_icon from '../assets/images/mdi_web_tiny.svg'
 import tel_icon from '../assets/images/tel_icon.svg'
 import mail_icon from '../assets/images/ic_round-mail.svg'
 import born_icon from '../assets/images/birthday-cake.svg'
+import dot_progress from '../assets/images/dot_progress.svg'
+import ProgressBar from '../components/progress-bar'
 
 class About extends Component {
     componentDidMount() {
@@ -35,7 +37,7 @@ class About extends Component {
 
                 <section className="green-section">
                     <div className="green-section-inner">
-                        <div className="card">
+                        <div className="card profile">
                             <h3 className="card-title">Profile</h3>
 
                             <div className="card-content">
@@ -65,6 +67,118 @@ class About extends Component {
                                 </div>
                             </div>
                         </div>
+
+                        <div className="card education">
+                            <h3 className="title">Education</h3>
+
+                            <div className="card-content">
+                                <div className="dot">
+                                    <img src={dot_progress} alt="dot"/>
+                                </div>
+
+                                <div className="school">
+                                    <div className="year">2017 - Now</div>
+                                    <div className="school-name">
+                                        S1 Teknik Informatika <br/>
+                                        Universitas Negeri Malang
+                                    </div>
+                                </div>
+
+                                <div className="dot">
+                                    <img src={dot_progress} alt="dot"/>
+                                </div>
+
+                                <div className="school">
+                                    <div className="year">2014 - 2017</div>
+                                    <div className="school-name">
+                                        IPA <br/>
+                                        SMA Negeri 11 Surabaya
+                                    </div>
+                                </div>
+
+                                <div className="dot">
+                                    <img src={dot_progress} alt="dot"/>
+                                </div>
+
+                                <div className="school">
+                                    <div className="year">2011 - 2014</div>
+                                    <div className="school-name">
+                                        SMP Negeri 20 Surabaya
+                                    </div>
+                                </div>
+
+                                <div className="dot last">
+                                    <img src={dot_progress} alt="dot"/>
+                                </div>
+
+                                <div className="school">
+                                    <div className="year">2005 - 2011</div>
+                                    <div className="school-name">
+                                        MI Nyai Hj. Ashfiyah
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="orange-section">
+                    <div className="orange-section-inner">
+                        <div className="card language">
+                            <h3 className="card-title">Language</h3>
+
+                            <span className="language-name">Bahasa Indonesia</span>
+                            <ProgressBar percent="100%" />
+
+                            <span className="language-name">English</span>
+                            <ProgressBar percent="60%" />
+
+                            <span className="language-name">Javanese</span>
+                            <ProgressBar percent="90%" />
+                        </div>
+
+                        <div className="card experience-card">
+                            <h3 className="card-title">Experience</h3>
+
+                            <div className="card-content">
+                                <div className="dot">
+                                    <img src={dot_progress} alt="dot"/>
+                                </div>
+
+                                <div className="experience">
+                                    <div className="date">Juni - September 2019</div>
+                                    <div className="experience-place">Jurusan Teknik Elektro, Universitas Negeri Malang</div>
+                                    <div className="experience-description">Proyek dengan dosen Universitas Negeri Malang untuk membuat aplikasi web simulasi UKK SMK TKJ Ibnu Abbas Bantur.</div>
+                                </div>
+                                
+                                <div className="dot">
+                                    <img src={dot_progress} alt="dot"/>
+                                </div>
+
+                                <div className="experience">
+                                    <div className="date">Maret - April 2019</div>
+                                    <div className="experience-place">Self Employee</div>
+                                    <div className="experience-description">Membuat sistem informasi tentang Arsip surat.</div>
+                                </div>
+                                <div className="dot last">
+                                    <img src={dot_progress} alt="dot"/>
+                                </div>
+
+                                <div className="experience">
+                                    <div className="date">Juni - November 2018</div>
+                                    <div className="experience-place">Jurusan HKN, Universitas Negeri Malang</div>
+                                    <div className="experience-description">Membuat aplikasi android "Madani Citizine".</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="skill-section">
+                    <div className="skill-section-inner">
+                        <h3 className="title">Skill Certification</h3>
+
+                        <h3 className="title">Skills</h3>
                     </div>
                 </section>
             </div>
