@@ -27,6 +27,7 @@ class Landing extends Component {
                         type={project.type}
                         limit="limit"
                         href={`/projects/${index+1}`}
+                        key={index+1}
                     />
                 )
             })

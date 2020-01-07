@@ -34,9 +34,9 @@ class About extends Component {
         Api.getSkills().then(data => {
             let skillElems = []
 
-            data.forEach(skill => {
+            data.forEach((skill, index) => {
                 skillElems.push(
-                    <SkillCard skillName={skill.skill_name} percent={`${skill.percent}%`} skillImage={skill.thumbnail}/>
+                    <SkillCard skillName={skill.skill_name} percent={`${skill.percent}%`} skillImage={skill.thumbnail} key={index} />
                 )
             });
             
