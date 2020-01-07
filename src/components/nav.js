@@ -6,25 +6,26 @@ class Nav extends React.Component {
     state = {}
 
     onLocationChange(location) {
+        let hash = window.location.hash;
         document.body.scrollTop = 0
         document.documentElement.scrollTop = 0
 
-        if (location.pathname === "/") {
+        if (hash === "#/") {
             this.setState({
                 activeIdx: 0
             })
         }
-        else if (location.pathname === "/about") {
+        else if (hash === "#/about") {
             this.setState({
                 activeIdx: 1
             })
         }
-        else if (location.pathname === "/project" || location.pathname.indexOf("/project") !== -1) {
+        else if (hash === "#/project" || hash.indexOf("#/project") !== -1) {
             this.setState({
                 activeIdx: 2
             })
         }
-        else if (location.pathname === "/contact" || location.pathname.indexOf("/project") !== -1) {
+        else if (hash === "#/contact") {
             this.setState({
                 activeIdx: 3
             })
@@ -32,9 +33,12 @@ class Nav extends React.Component {
     }
 
     componentDidMount() {
-        this.onLocationChange(window.location)
+        this.onLocationChange()
         window.listenNavScroll()
-        this.props.history.listen(location => this.onLocationChange(location))
+        // this.props.history.listen(location => this.onLocationChange(location))
+        window.addEventListener("hashchange", () => {
+            this.onLocationChange()
+        })
     }
 
     render() {

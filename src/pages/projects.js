@@ -19,6 +19,7 @@ class Projects extends Component {
                         label={project.status}
                         type={project.type}
                         href={`/projects/${index+1}`}
+                        key={index+1}
                     />
                 )
             })
