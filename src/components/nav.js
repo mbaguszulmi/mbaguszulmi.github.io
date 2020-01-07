@@ -35,7 +35,6 @@ class Nav extends React.Component {
     componentDidMount() {
         this.onLocationChange()
         window.listenNavScroll()
-        // this.props.history.listen(location => this.onLocationChange(location))
         window.addEventListener("hashchange", () => {
             this.onLocationChange()
         })
