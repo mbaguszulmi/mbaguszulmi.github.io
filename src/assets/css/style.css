@@ -763,6 +763,7 @@ div.progress-bar div.percentage {
 
 .btn.inline {
   display: inline-block;
+  margin: 0 5px;
 }
 
 a.project-card {
