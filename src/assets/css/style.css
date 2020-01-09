@@ -566,6 +566,7 @@ body div.content div.project-detail div.project-detail-inner div.thumbnail {
   border-radius: 20px;
   overflow: hidden;
   position: relative;
+  margin-top: 50px;
 }
 
 body div.content div.project-detail div.project-detail-inner div.thumbnail div.status {
