@@ -1,4 +1,4 @@
-@import url("../fonts/nunito/nunito.css");
+@import url("../fonts/nunito-v12-latin/nunito.css");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -383,6 +383,10 @@ body div.content div.about section.green-section div.green-section-inner div.car
   grid-gap: 20px;
 }
 
+body div.content div.about section.green-section div.green-section-inner div.card.education div.card-content div.dot img {
+  display: block;
+}
+
 body div.content div.about section.green-section div.green-section-inner div.card.education div.card-content div.dot::after {
   content: "";
   display: block;
@@ -449,6 +453,10 @@ body div.content div.about section.orange-section div.orange-section-inner div.c
   -ms-grid-columns: 24px auto;
       grid-template-columns: 24px auto;
   grid-gap: 20px;
+}
+
+body div.content div.about section.orange-section div.orange-section-inner div.card.experience-card div.card-content div.dot img {
+  display: block;
 }
 
 body div.content div.about section.orange-section div.orange-section-inner div.card.experience-card div.card-content div.dot::after {
@@ -558,6 +566,7 @@ body div.content div.project-detail div.project-detail-inner div.thumbnail {
   border-radius: 20px;
   overflow: hidden;
   position: relative;
+  margin-top: 50px;
 }
 
 body div.content div.project-detail div.project-detail-inner div.thumbnail div.status {
@@ -733,9 +742,9 @@ div.progress-bar div.percentage {
 
 .btn {
   display: block;
-  line-height: 34px;
+  line-height: 44px;
   height: 44px;
-  padding: 0 20px 10px;
+  padding: 0 20px;
   border-radius: 10px;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -755,6 +764,7 @@ div.progress-bar div.percentage {
 
 .btn.inline {
   display: inline-block;
+  margin: 0 5px;
 }
 
 a.project-card {
@@ -826,7 +836,7 @@ a.project-card h3.project-title {
   font-size: 24px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding: 0 20px 20px;
+  padding: 0 20px;
   overflow: hidden;
   color: #000;
 }

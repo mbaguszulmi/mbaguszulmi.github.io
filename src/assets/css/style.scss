@@ -1,5 +1,4 @@
-@import url('../fonts/nunito/nunito.css');
-// @import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700,700i&display=swap');
+@import url('../fonts/nunito-v12-latin/nunito.css');
 
 * {
     box-sizing: border-box;
@@ -303,6 +302,10 @@ body {
                                 grid-gap: 20px;
 
                                 div.dot {
+                                    img {
+                                        display: block;
+                                    }
+
                                     &::after {
                                         content: "";
                                         display: block;
@@ -368,6 +371,10 @@ body {
                                 grid-gap: 20px;
 
                                 div.dot {
+                                    img {
+                                        display: block;
+                                    }
+
                                     &::after {
                                         content: "";
                                         display: block;
@@ -474,6 +481,7 @@ body {
                     border-radius: 20px;
                     overflow: hidden;
                     position: relative;
+                    margin-top: 50px;
 
                     div.status {
                         position: absolute;
@@ -633,9 +641,9 @@ div.progress-bar {
 
 .btn {
     display: block;
-    line-height: 34px;
+    line-height: 44px;
     height: 44px;
-    padding: 0 20px 10px;
+    padding: 0 20px;
     border-radius: 10px;
     width: max-content;
     font-size: 24px;
@@ -652,6 +660,7 @@ div.progress-bar {
 
     &.inline {
         display: inline-block;
+        margin: 0 5px;
     }
 }
 
@@ -715,7 +724,7 @@ a.project-card {
         font-size: 24px;
         text-overflow: ellipsis;
         white-space: nowrap;
-        padding: 0 20px 20px;
+        padding: 0 20px;
         overflow: hidden;
         color: #000;
     }
