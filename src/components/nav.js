@@ -42,6 +42,7 @@ class Nav extends React.Component {
         let nav = document.querySelector("#top-nav")
         let hamburger = document.querySelector("#hamburger")
         let navDrawerWrapper = document.querySelector("#nav-drawer-wrapper")
+        let navLinkDrawer = document.querySelectorAll("#nav-drawer-wrapper .nav-link")
 
         hamburger.addEventListener("click", () => {
             if (nav.classList.contains("open-drawer")) {
@@ -54,6 +55,12 @@ class Nav extends React.Component {
 
         navDrawerWrapper.addEventListener("click", () => {
             nav.classList.remove("open-drawer")
+        })
+
+        navLinkDrawer.forEach(link => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("open-drawer")
+            })
         })
     }
 
