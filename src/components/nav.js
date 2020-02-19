@@ -32,6 +32,19 @@ class Nav extends React.Component {
         }
     }
 
+    drawerOpen(open = false) {
+        let nav = document.querySelector("#top-nav")
+
+        if (open) {
+            nav.classList.add("open-drawer")
+            document.body.classList.add("no-scroll");
+        }
+        else {
+            nav.classList.remove("open-drawer")
+            document.body.classList.remove("no-scroll");
+        }
+    }
+
     componentDidMount() {
         this.onLocationChange()
         window.listenNavScroll()
@@ -45,22 +58,15 @@ class Nav extends React.Component {
         let navLinkDrawer = document.querySelectorAll("#nav-drawer-wrapper .nav-link")
 
         hamburger.addEventListener("click", () => {
-            if (nav.classList.contains("open-drawer")) {
-                nav.classList.remove("open-drawer")
-            }
-            else {
-                nav.classList.add("open-drawer")
-            }
+            this.drawerOpen(!nav.classList.contains("open-drawer"))
         })
 
         navDrawerWrapper.addEventListener("click", () => {
-            nav.classList.remove("open-drawer")
+            this.drawerOpen(false)
         })
 
         navLinkDrawer.forEach(link => {
-            link.addEventListener("click", () => {
-                nav.classList.remove("open-drawer")
-            })
+            this.drawerOpen(false)
         })
     }
 
