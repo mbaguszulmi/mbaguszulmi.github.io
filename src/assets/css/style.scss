@@ -74,6 +74,10 @@ body {
                 align-items: center;
                 height: 100%;
 
+                @include phone-media {
+                    display: none;
+                }
+
                 a.nav-link {
                     font-size: 18px;
                     color: #000;
