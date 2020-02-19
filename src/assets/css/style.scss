@@ -1,5 +1,26 @@
 @import url('../fonts/nunito-v12-latin/nunito.css');
 
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin phone-media {
+    @media (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet-media {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop-media {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
