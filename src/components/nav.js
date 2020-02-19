@@ -38,13 +38,24 @@ class Nav extends React.Component {
         window.addEventListener("hashchange", () => {
             this.onLocationChange()
         })
+
+        let nav = document.querySelector("#top-nav")
+        let hamburger = document.querySelector("#hamburger")
+        hamburger.addEventListener("click", event => {
+            if (nav.classList.contains("open-drawer")) {
+                nav.classList.remove("open-drawer")
+            }
+            else {
+                nav.classList.add("open-drawer")
+            }
+        })
     }
 
     render() {
         return (
-            <nav className="top-nav">
+            <nav id="top-nav" className="top-nav">
                 <div className="nav-wrapper">
-                    <div className="hamburger">
+                    <div id="hamburger" className="hamburger">
                         <div className="bar bar-1"></div>
                         <div className="bar bar-2"></div>
                         <div className="bar bar-3"></div>
