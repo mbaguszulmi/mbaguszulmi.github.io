@@ -41,13 +41,19 @@ class Nav extends React.Component {
 
         let nav = document.querySelector("#top-nav")
         let hamburger = document.querySelector("#hamburger")
-        hamburger.addEventListener("click", event => {
+        let navDrawerWrapper = document.querySelector("#nav-drawer-wrapper")
+
+        hamburger.addEventListener("click", () => {
             if (nav.classList.contains("open-drawer")) {
                 nav.classList.remove("open-drawer")
             }
             else {
                 nav.classList.add("open-drawer")
             }
+        })
+
+        navDrawerWrapper.addEventListener("click", () => {
+            nav.classList.remove("open-drawer")
         })
     }
 
@@ -72,7 +78,7 @@ class Nav extends React.Component {
                     </div>
                 </div>
     
-                <div className="nav-drawer-wrapper">
+                <div id="nav-drawer-wrapper" className="nav-drawer-wrapper">
                     <div className="nav-drawer">
                         <Link to="/" className={`nav-link ${this.state.activeIdx === 0 ? "active" : ""}`}>Home</Link>
                         <Link to="/about" className={`nav-link ${this.state.activeIdx === 1 ? "active" : ""}`}>About Me</Link>
