@@ -44,6 +44,11 @@ class Nav extends React.Component {
         return (
             <nav className="top-nav">
                 <div className="nav-wrapper">
+                    <div className="hamburger">
+                        <div className="bar bar-1"></div>
+                        <div className="bar bar-2"></div>
+                        <div className="bar bar-3"></div>
+                    </div>
                     <div className="logo">
                         <img src={this.props.logo} alt="logo"></img>
                     </div>
