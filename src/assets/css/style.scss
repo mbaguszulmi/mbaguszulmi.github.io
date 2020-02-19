@@ -59,6 +59,19 @@ body {
             margin: 0 auto;
             height: 100%;
 
+            div.hamburger {
+                margin-right: 10px;
+                cursor: pointer;
+
+                .bar {
+                    height: 4px;
+                    background-color: #5C5C5C;
+                    width: 40px;
+                    margin: 5px 0;
+                    border-radius: 2px;
+                }
+            }
+
             div.logo {
                 margin-right: 20px;
 
