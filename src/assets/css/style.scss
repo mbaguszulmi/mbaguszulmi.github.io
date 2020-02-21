@@ -329,6 +329,10 @@ body {
                     margin: 0 auto;
                     padding: 0 20px;
                     width: 100%;
+
+                    @include phone-media {
+                        font-size: 30px;
+                    }
                 }
     
                 div.slider {
