@@ -716,6 +716,14 @@ body {
                     }
                 }
 
+                div.source-preview-wrapper {
+                    .btn {
+                        @include phone-media {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
                 div.description {
                     font-size: 20px;
                     line-height: 30px;
