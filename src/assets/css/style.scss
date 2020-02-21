@@ -762,6 +762,11 @@ body {
             font-size: 20px;
             color: #fff;
             background: linear-gradient(106.37deg, #A363CB -8.15%, #E2B38C 123.43%);
+
+            @include phone-media {
+                font-size: 16px;
+                text-align: center;
+            }
         }
     }
 }
@@ -853,7 +858,6 @@ a.project-card {
         position: relative;
         width: 100%;
         padding-top: 56.25%;
-        background-color: #5C5C5C;
         background-size: cover;
         background-position: center;
         
