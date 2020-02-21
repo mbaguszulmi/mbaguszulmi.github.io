@@ -234,12 +234,22 @@ body {
                     height: 200px;
                     background: center / cover url('../images/me.jpg');
                     border-radius: 50%;
+
+                    @include phone-media {
+                        width: 150px;
+                        height: 150px;
+                    }
                 }
     
                 h1.my-name {
                     font-weight: normal;
                     font-size: 30px;
                     margin: 20px 0 10px;
+
+                    @include phone-media {
+                        font-size: 24px;
+                        text-align: center;
+                    }
                 }
     
                 p.description {
@@ -252,6 +262,11 @@ body {
                     margin-top: 60px;
                     width: 80px;
                     height: 80px;
+
+                    @include phone-media {
+                        width: 50px;
+                        width: 50px;
+                    }
                 }
             }
     
@@ -289,6 +304,11 @@ body {
                             font-size: 24px;
                             font-weight: normal;
                             line-height: 33px;
+
+                            @include phone-media {
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
                         }
                     }
                 }
@@ -688,6 +708,16 @@ body {
                 grid-template-columns: repeat(3, calc((100% - 40px) / 3));
                 grid-gap: 20px;
 
+                @include phone-media {
+                    display: block;
+
+                    div.footer-content {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                    }
+                }
+
                 div.footer-content {
                     h3.footer-title {
                         font-size: 24px;
@@ -784,6 +814,12 @@ div.progress-bar {
     color: #fff;
     text-decoration: none;
 
+    @include phone-media {
+        height: 34px;
+        line-height: 34px;
+        font-size: 16px;
+    }
+
     &.main {
         background: linear-gradient(271.58deg, #1DA1F2 -4.99%, #92C76D 96.93%);
     }
@@ -877,6 +913,7 @@ div.socials {
         @include tablet-media-down {
             width: 30px;
             height: 30px;
+            margin: 0 5px;
         }
 
         &.linkedin {
