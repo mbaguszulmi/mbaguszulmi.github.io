@@ -386,7 +386,7 @@ body {
                 padding: 90px 20px 20px;
                 width: 100%;
                 background-color: #fff;
-                background: center right / cover url('../images/header-bg.png');
+                background: 50% 100% / cover url('../images/header-bg.png');
 
                 div.about-section-inner {
                     max-width: 1200px;
@@ -397,10 +397,20 @@ body {
                     justify-content: space-between;
                     align-items: center;
 
+                    @include phone-media {
+                        flex-direction: column;
+                    }
+
                     img.my-photo {
                         max-width: 336px;
                         border-radius: 20px;
                         margin-right: 40px;
+
+                        @include phone-media {
+                            margin-bottom: 20px;
+                            margin-right: 0;
+                            max-width: 460px;
+                        }
                     }
     
                     div.card {
@@ -410,6 +420,11 @@ body {
                             color: #5C5C5C;
                             font-size: 24px;
                             line-height: 33px;
+
+                            @include phone-media {
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
                         }
                     }
                 }
