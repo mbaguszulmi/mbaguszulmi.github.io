@@ -21,6 +21,12 @@ $desktop-width: 1024px;
     }
 }
 
+@mixin tablet-media-down {
+    @media (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
 @mixin desktop-media {
     @media (min-width: #{$desktop-width}) {
         @content;
@@ -867,6 +873,11 @@ div.socials {
         width: 40px;
         height: 40px;
         margin: 0 10px;
+
+        @include tablet-media-down {
+            width: 30px;
+            height: 30px;
+        }
 
         &.linkedin {
             background: center / contain url('../images/linkedinicon.svg');
