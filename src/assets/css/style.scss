@@ -443,12 +443,20 @@ body {
                     align-items: center;
                     min-height: calc(90vh - 40px);
 
+                    @include phone-media {
+                        flex-direction: column;
+                    }
+
                     div.card {
                         max-width: 525px;
                         width: 100%;
 
                         &.profile {
                             font-size: 18px;
+
+                            @include phone-media {
+                                margin-bottom: 20px;
+                            }
 
                             div.content-item {
                                 display: flex;
@@ -524,11 +532,19 @@ body {
                     justify-content: space-between;
                     align-items: center;
 
+                    @include phone-media {
+                        flex-direction: column;
+                    }
+
                     div.card {
                         max-width: 525px;
                         width: 100%;
 
                         &.language {
+                            @include phone-media {
+                                margin-bottom: 20px;
+                            }
+
                             span.language-name {
                                 font-size: 18px;
                                 color: #838383;
