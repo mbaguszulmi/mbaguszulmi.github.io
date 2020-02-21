@@ -1,5 +1,38 @@
 @import url('../fonts/nunito-v12-latin/nunito.css');
 
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin phone-media {
+    @media (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet-media {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet-media-up {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin tablet-media-down {
+    @media (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop-media {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -8,6 +41,10 @@ body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
     background-color: #fff;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 
     nav.top-nav {
         height: 70px;
@@ -30,6 +67,23 @@ body {
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
         }
 
+        &.open-drawer {
+            div.hamburger {
+                div.bar.bar-1 {
+                    transform: translateY(9px) rotate(45deg);
+                }
+
+                div.bar.bar-2 {
+                    transform: rotate(180deg);
+                    opacity: 0;
+                }
+
+                div.bar.bar-3 {
+                    transform: translateY(-9px) rotate(135deg);
+                }
+            }
+        }
+
         div.nav-wrapper {
             display: flex;
             flex-direction: row;
@@ -38,8 +92,32 @@ body {
             margin: 0 auto;
             height: 100%;
 
+            div.hamburger {
+                margin-right: 10px;
+                cursor: pointer;
+                display: none;
+                z-index: 99;
+
+                @include phone-media {
+                    display: unset;
+                }
+
+                .bar {
+                    height: 4px;
+                    background-color: #5C5C5C;
+                    width: 30px;
+                    border-radius: 2px;
+
+                    &.bar-2 {
+                        margin: 5px 0;
+                    }
+                }
+            }
+
             div.logo {
                 margin-right: 20px;
+                display: flex;
+                justify-content: center;
 
                 img {
                     max-width: 46px;
@@ -52,6 +130,10 @@ body {
                 flex-direction: row;
                 align-items: center;
                 height: 100%;
+
+                @include phone-media {
+                    display: none;
+                }
 
                 a.nav-link {
                     font-size: 18px;
@@ -76,8 +158,60 @@ body {
             }
         }
 
+        @include tablet-media-up {
+            div.nav-drawer-wrapper {
+                display: none !important;
+            }
+        }
+
+        &.open-drawer {
+            div.nav-drawer-wrapper {
+                visibility: visible;
+                opacity: 1;
+
+                div.nav-drawer {
+                    left: 0;
+                }
+            }
+        }
+
         div.nav-drawer-wrapper {
-            display: none;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 9;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            left: 0;
+            background: rgba(0,0,0,0.3);
+            
+            div.nav-drawer {
+                width: 230px;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                padding: 90px 0 20px;
+                position: absolute;
+                left: -230px;
+
+                a.nav-link {
+                    font-size: 18px;
+                    text-decoration: none;
+                    color: #000;
+                    padding: 10px 20px;
+
+                    &:hover {
+                        background-color: #dddddd;
+                    }
+
+                    &.active {
+                        border-left: 4px solid #92C76D;
+                        background-color: #dddddd;
+                    }
+                }
+            }
         }
     }
 
@@ -100,12 +234,22 @@ body {
                     height: 200px;
                     background: center / cover url('../images/me.jpg');
                     border-radius: 50%;
+
+                    @include phone-media {
+                        width: 150px;
+                        height: 150px;
+                    }
                 }
     
                 h1.my-name {
                     font-weight: normal;
                     font-size: 30px;
                     margin: 20px 0 10px;
+
+                    @include phone-media {
+                        font-size: 24px;
+                        text-align: center;
+                    }
                 }
     
                 p.description {
@@ -118,6 +262,11 @@ body {
                     margin-top: 60px;
                     width: 80px;
                     height: 80px;
+
+                    @include phone-media {
+                        width: 50px;
+                        width: 50px;
+                    }
                 }
             }
     
@@ -155,6 +304,11 @@ body {
                             font-size: 24px;
                             font-weight: normal;
                             line-height: 33px;
+
+                            @include phone-media {
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
                         }
                     }
                 }
@@ -175,6 +329,10 @@ body {
                     margin: 0 auto;
                     padding: 0 20px;
                     width: 100%;
+
+                    @include phone-media {
+                        font-size: 30px;
+                    }
                 }
     
                 div.slider {
@@ -228,7 +386,7 @@ body {
                 padding: 90px 20px 20px;
                 width: 100%;
                 background-color: #fff;
-                background: center right / cover url('../images/header-bg.png');
+                background: 50% 100% / cover url('../images/header-bg.png');
 
                 div.about-section-inner {
                     max-width: 1200px;
@@ -239,10 +397,21 @@ body {
                     justify-content: space-between;
                     align-items: center;
 
+                    @include phone-media {
+                        flex-direction: column;
+                    }
+
                     img.my-photo {
+                        width: 100%;
                         max-width: 336px;
                         border-radius: 20px;
                         margin-right: 40px;
+
+                        @include phone-media {
+                            margin-bottom: 20px;
+                            margin-right: 0;
+                            max-width: 460px;
+                        }
                     }
     
                     div.card {
@@ -252,6 +421,11 @@ body {
                             color: #5C5C5C;
                             font-size: 24px;
                             line-height: 33px;
+
+                            @include phone-media {
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
                         }
                     }
                 }
@@ -270,12 +444,21 @@ body {
                     align-items: center;
                     min-height: calc(90vh - 40px);
 
+                    @include phone-media {
+                        flex-direction: column;
+                    }
+
                     div.card {
                         max-width: 525px;
                         width: 100%;
 
                         &.profile {
                             font-size: 18px;
+
+                            @include phone-media {
+                                margin-bottom: 20px;
+                                font-size: 16px;
+                            }
 
                             div.content-item {
                                 display: flex;
@@ -285,12 +468,13 @@ body {
                                     height: 16px;
                                     margin-right: 10px;
                                     flex-shrink: 0;
-                                    margin-top: 5px;
+                                    margin-top: 3px;
                                 }
 
                                 span {
                                     margin-bottom: 15px;
                                     line-height: 20px;
+                                    word-break: break-word;
                                 }
                             }
                         }
@@ -351,11 +535,19 @@ body {
                     justify-content: space-between;
                     align-items: center;
 
+                    @include phone-media {
+                        flex-direction: column;
+                    }
+
                     div.card {
                         max-width: 525px;
                         width: 100%;
 
                         &.language {
+                            @include phone-media {
+                                margin-bottom: 20px;
+                            }
+
                             span.language-name {
                                 font-size: 18px;
                                 color: #838383;
@@ -448,6 +640,10 @@ body {
                         display: grid;
                         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
                         grid-gap: 20px;
+
+                        @include phone-media {
+                            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                        }
                     }
                 }
             }
@@ -520,6 +716,14 @@ body {
                     }
                 }
 
+                div.source-preview-wrapper {
+                    .btn {
+                        @include phone-media {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
                 div.description {
                     font-size: 20px;
                     line-height: 30px;
@@ -553,6 +757,16 @@ body {
                 display: grid;
                 grid-template-columns: repeat(3, calc((100% - 40px) / 3));
                 grid-gap: 20px;
+
+                @include phone-media {
+                    display: block;
+
+                    div.footer-content {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                    }
+                }
 
                 div.footer-content {
                     h3.footer-title {
@@ -594,6 +808,11 @@ body {
             font-size: 20px;
             color: #fff;
             background: linear-gradient(106.37deg, #A363CB -8.15%, #E2B38C 123.43%);
+
+            @include phone-media {
+                font-size: 16px;
+                text-align: center;
+            }
         }
     }
 }
@@ -650,6 +869,12 @@ div.progress-bar {
     color: #fff;
     text-decoration: none;
 
+    @include phone-media {
+        height: 34px;
+        line-height: 34px;
+        font-size: 16px;
+    }
+
     &.main {
         background: linear-gradient(271.58deg, #1DA1F2 -4.99%, #92C76D 96.93%);
     }
@@ -679,7 +904,6 @@ a.project-card {
         position: relative;
         width: 100%;
         padding-top: 56.25%;
-        background-color: #5C5C5C;
         background-size: cover;
         background-position: center;
         
@@ -739,6 +963,12 @@ div.socials {
         width: 40px;
         height: 40px;
         margin: 0 10px;
+
+        @include tablet-media-down {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+        }
 
         &.linkedin {
             background: center / contain url('../images/linkedinicon.svg');
