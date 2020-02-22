@@ -12,6 +12,14 @@ class Landing extends Component {
     componentDidMount() {
         document.title = "Muhammad Bagus Zulmi"
         window.listenSlider()
+        let btnDown = document.querySelector("#btn-down")
+        btnDown.addEventListener("click", () => {
+            window.scrollTo({
+                top: document.querySelector("#about-me-section").offsetHeight,
+                left: 0,
+                behavior: 'smooth'
+            })
+        })
 
         Api.getProjects().then(data => {
             let projectElems = []
@@ -47,7 +55,7 @@ class Landing extends Component {
                     <h1 className="my-name">Muhammad Bagus Zulmi</h1>
                     <p className="description">Web and Android Developer</p>
                     <Socials/>
-                    <img className="btn-down" src={btn_down} alt="down button" />
+                    <img id="btn-down" className="btn-down" src={btn_down} alt="down button" />
                 </header>
 
                 <section id="about-me-section" className="about-me-section">

@@ -262,6 +262,7 @@ body {
                     margin-top: 60px;
                     width: 80px;
                     height: 80px;
+                    cursor: pointer;
 
                     @include phone-media {
                         width: 50px;
