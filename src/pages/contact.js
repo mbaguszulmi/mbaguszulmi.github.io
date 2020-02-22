@@ -29,7 +29,9 @@ class Contact extends Component {
                     </form>
 
                     <div className="another-contact">
-                        or chat me with one of these service
+                        <span>
+                            or chat me with one of these services
+                        </span>
                     </div>
 
                     <div className="other-contact-service">
