@@ -1,5 +1,5 @@
 let sliders
-let scrollLeft, startX, isMouseDown = false
+let scrollLeft, startX, isMouseDown = false, isSliding = false
 
 window.listenSlider = () => {
     sliders = document.querySelectorAll('.slider')
@@ -21,10 +21,18 @@ window.listenSlider = () => {
 
         slider.addEventListener('mousemove', event => {
             if (!isMouseDown) return
+            isSliding = true
             event.preventDefault()
             const x = event.pageX - slider.offsetLeft
             const walk = (x - startX)
             slider.scrollLeft = scrollLeft - walk
         })
     })
+}
+
+window.projectCardClick = event => {
+    if (isSliding) {
+        event.preventDefault()
+        isSliding = false
+    }
 }

@@ -28,6 +28,7 @@ class Landing extends Component {
                         limit="limit"
                         href={`/projects/${index+1}`}
                         key={index+1}
+                        onClick={window.projectCardClick}
                     />
                 )
             })

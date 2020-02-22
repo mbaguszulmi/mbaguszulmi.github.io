@@ -20,19 +20,19 @@ class ProjectsDetail extends Component {
 
             if (dataSelected.source) {
                 buttonElems.push(
-                    <a class="btn main rounded inline" href={dataSelected.source.url} target="_blank" rel="noopener noreferrer" >View Source</a>
+                    <a key="btn-source" className="btn main rounded inline" href={dataSelected.source.url} target="_blank" rel="noopener noreferrer" >View Source</a>
                 )
             }
 
             if (dataSelected.preview) {
                 if(dataSelected.preview.type === "download") {
                     buttonElems.push(
-                        <a class="btn main rounded inline" href={dataSelected.preview.url} target="_blank" rel="noopener noreferrer" >Download Binary</a>
+                        <a key="btn-download" className="btn main rounded inline" href={dataSelected.preview.url} target="_blank" rel="noopener noreferrer" >Download Binary</a>
                     )
                 }
                 else {
                     buttonElems.push(
-                        <a class="btn main rounded inline" href={dataSelected.preview.url} target="_blank" rel="noopener noreferrer" >Live Preview</a>
+                        <a key="btn-live" className="btn main rounded inline" href={dataSelected.preview.url} target="_blank" rel="noopener noreferrer" >Live Preview</a>
                     )
                 }
             }
