@@ -15,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest --watchAll --forceExit",
+    "test": "jest --ci --forceExit --detectOpenHandles",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
