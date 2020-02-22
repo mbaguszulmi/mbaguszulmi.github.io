@@ -1,0 +1,30 @@
+os:
+  - linux
+env:
+  global:
+    - GITHUB_REPO: "mbaguszulmi/mbaguszulmi.github.io"
+    - TARGET_BRANCH_DEPLOY: "master"
+branches:
+  except:
+  - master
+language: node_js
+node_js:
+  - "stable"
+cache:
+  yarn: true
+  directories:
+    - node_modules
+install:
+  - echo "[L] Installing dependencies..."
+  - yarn install
+script:
+  - echo "[L] Start Test..."
+  - yarn test
+before_deploy:
+  - echo "[L] Building project..."
+  - yarn build
+deploy:
+  provider: script
+  script: bash deploy.sh
+  on:
+    branch: development
