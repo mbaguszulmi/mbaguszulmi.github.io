@@ -39,7 +39,7 @@ class Contact extends Component {
 
                         <div className="input-wrapper">
                             <label htmlFor="body">Body</label>
-                            <textarea name="body" id="body" placeholder="Body of email" row="4" required></textarea>
+                            <textarea name="body" id="body" placeholder="Body of email" row="8" required></textarea>
                         </div>
 
                         <button type="submit" className="btn main rounded">Submit</button>
