@@ -9,7 +9,32 @@ class Contact extends Component {
         return (
             <div className="contact">
                 <div className="contact-inner">
-                    This page is under development
+                    <p className="message">
+                        Contact me via email <a href="mailto:mbaguszulmi@gmail.com">mbaguszulmi@gmail.com</a> <br/>
+                        or you can fill this form bellow.
+                    </p>
+
+                    <form className="nx-form" id="email-form">
+                        <div className="input-wrapper">
+                            <label for="">Subject</label>
+                            <input type="text" name="subject" id="subject" placeholder="Subject"></input>
+                        </div>
+
+                        <div className="input-wrapper">
+                            <label for="">Body</label>
+                            <textarea name="body" id="body" placeholder="Body"></textarea>
+                        </div>
+
+                        <button type="submit" className="btn main rounded">Submit</button>
+                    </form>
+
+                    <div className="another-contact">
+                        or chat me with one of these service
+                    </div>
+
+                    <div className="other-contact-service">
+                        <a className="btn main rounded" target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=+6289682056995">WhatsApp</a>
+                    </div>
                 </div>
             </div>
         )
