@@ -84,6 +84,21 @@
         "description": "<p>This site built for helping SMK Ibnu Abbas, Bantur, Malang. This site will guide students to train UKK TKJ. Containing teory of mikrotik, quiz, and recap. Built with codeigniter php framework, font awesme icon, and pure css. By the way, I built this site with my friend Yahya Amirudin. His job is designing the UI/UX of this site. Because this site is belong to SMK Ibnu Abbas, I can't give you the source code. But you can visit this preview site in the link above.</p>"
     },
     {
+        "project_name": "PUPR Website Redesign Competition",
+        "type": "web",
+        "status": "released",
+        "thumbnail_url": "assets/images/projects/webpupr.jpg",
+        "source": {
+            "url": "https://github.com/webpupredesign/webpupredesign.github.io",
+            "type": "git"
+        },
+        "preview": {
+            "url": "https://webpupredesign.github.io",
+            "type": "live"
+        },
+        "description": "<p>I have participated in a website redesign contest with my friend Yahya Amirudin Nasrulloh. The contest was organized by the Ministry of PUPR RI (Public Works and Public Housing of the Republic of Indonesia). At that time I was the one who implemented the design from Yahya. This website is responsive. And at that time, our website was in the top 10. Of course we were very excited, even though we had to stop at that point and not win the contest.</p><p>We built this website from scratch, and we use several libraries such as bootstrap and jquery to help the process of development.</p><p>The source code can be seen on github webpupredesign and to see the results, it can be seen from the button above.</p>"
+    },
+    {
         "project_name": "E-Arsip Information System",
         "type": "web",
         "status": "released",
