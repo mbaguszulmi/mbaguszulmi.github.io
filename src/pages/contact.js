@@ -17,12 +17,12 @@ class Contact extends Component {
                     <form className="nx-form" id="email-form">
                         <div className="input-wrapper">
                             <label for="">Subject</label>
-                            <input type="text" name="subject" id="subject" placeholder="Subject"></input>
+                            <input type="text" name="subject" id="subject" placeholder="Type a subject..."></input>
                         </div>
 
                         <div className="input-wrapper">
                             <label for="">Body</label>
-                            <textarea name="body" id="body" placeholder="Body"></textarea>
+                            <textarea name="body" id="body" placeholder="Body of email" row="4"></textarea>
                         </div>
 
                         <button type="submit" className="btn main rounded">Submit</button>
