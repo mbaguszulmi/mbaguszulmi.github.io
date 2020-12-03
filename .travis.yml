@@ -24,7 +24,7 @@ before_deploy:
   - echo "[L] Building project..."
   - yarn build
 deploy:
-  skip_cleanup: true
+  cleanup: true
   provider: script
   script: bash deploy.sh
   on:
