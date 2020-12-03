@@ -66,7 +66,7 @@ class Landing extends Component {
                             <p>
                                 Hi, my name is Muhammad Bagus Zulmi. I am a Informatics 
                                 Engineering student at Universitas Negeri Malang. Currently 
-                                I will take 6th semester. I really like developing 
+                                I'm taking 7th semester. I really like developing 
                                 information systems, especially in the form of web and 
                                 Android applications. I also like artificial intelligence.
                             </p>
