@@ -3,7 +3,7 @@
         "project_name": "Global Bakery Android Apps",
         "type": "android",
         "status": "released",
-        "thumbnail_url": "/assets/images/projects/kasirApp.png",
+        "thumbnail_url": "/assets/images/projects/KasirApp.png",
         "source": null,
         "preview": null,
         "description": "<p>This app is developed under Illiyin Studio Company in Malang. This app is built for our client, Global Bakery Indonesia. The main app feature is managing sales and products in their company. It's also able to print receipt. Unfortunately, this app is proprietary. So I can't show you source code or tha app. In this project, I have responsibility for development flow, back-end, front-end, and architecture. And my teammate is managing Android UI XML.</p><p>This app developed with Android Java Language. Using tablet as a main viewport. So this app will work great in tablet.</p>"
