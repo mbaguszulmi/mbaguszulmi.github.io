@@ -1,5 +1,32 @@
 [
     {
+        "project_name": "SIMSETA",
+        "type": "web",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/simseta.png",
+        "source": null,
+        "preview": {
+            "url": "https://simseta.mbaguszulmi.com/",
+            "type": "live"
+        },
+        "description": "<p>This project is dedicated to my client for creating Recruitment management Information System in Banjarmasin Labor Department (Dinas Tenaga Kerja Banjarmasin). This project is created with CodeIgniter 4. Have 2 user roles, Admin and User (Worker Candidate). So Worker documents and requirements from Candidate will be selected by Admin.</p>"
+    },
+    {
+        "project_name": "Food Order",
+        "type": "web",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/food-order.png",
+        "source": {
+            "url": "https://github.com/mbaguszulmi/food-order",
+            "type": "git"
+        },
+        "preview": {
+            "url": "https://mbaguszulmi.github.io/food-order",
+            "type": "live"
+        },
+        "description": "<p>In this project, I tried to make a web app with React + Redux. Truly, this is so fun development. Because with this formula, we can make a web app to be globally reactive. This project is done for satisfy requirements for a Front-End web dev position from a Software Development company in Indonesia.</p>"
+    },
+    {
         "project_name": "React PWA Portfolio Site",
         "type": "web",
         "status": "released",
