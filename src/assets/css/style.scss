@@ -526,18 +526,21 @@ body {
             section.orange-section {
                 background-color: #E2B38C;
                 padding: 20px;
+                display: flex;
+                align-items: center;
+                min-height: calc(90vh - 20px);
 
                 div.orange-section-inner {
                     max-width: 1200px;
-                    min-height: calc(90vh - 20px);
                     margin: 0 auto;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
-                    align-items: center;
+                    align-items: baseline;
+                    width: 100%;
 
                     @include phone-media {
-                        flex-direction: column;
+                        flex-direction: column-reverse;
                     }
 
                     div.card {
@@ -545,10 +548,6 @@ body {
                         width: 100%;
 
                         &.language {
-                            @include phone-media {
-                                margin-bottom: 20px;
-                            }
-
                             span.language-name {
                                 font-size: 18px;
                                 color: #838383;
@@ -558,6 +557,10 @@ body {
                         }
 
                         &.experience-card {
+                            @include phone-media {
+                                margin-bottom: 20px;
+                            }
+                            
                             div.card-content {
                                 display: grid;
                                 grid-template-columns: 24px auto;
