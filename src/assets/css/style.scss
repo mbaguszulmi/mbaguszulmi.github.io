@@ -560,7 +560,7 @@ body {
                             @include phone-media {
                                 margin-bottom: 20px;
                             }
-                            
+
                             div.card-content {
                                 display: grid;
                                 grid-template-columns: 24px auto;
@@ -1073,6 +1073,10 @@ div.socials {
 
         &.github {
             background: center / contain url('../images/githubicon.svg');
+        }
+
+        &.youtube {
+            background: center / contain url('../images/youtubeicon.svg');
         }
     }
 }
