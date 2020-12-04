@@ -1,5 +1,20 @@
 [
     {
+        "project_name": "GithubUser Native Android Apps",
+        "type": "android",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/GithubUser.png",
+        "source": {
+            "url": "https://github.com/mbaguszulmi/android-github-userTripStory",
+            "type": "git"
+        },
+        "preview": {
+            "url": "https://github.com/mbaguszulmi/android-github-user/releases",
+            "type": "download"
+        },
+        "description": "<p>This app named \"GithubUser\", built with android studio (in kotlin language). This app built for assignment of Dicoding Beginer Android Course. In this app, we can explore users in github and show details about the user. This app also connected with official Github API. The list in homepage built with RecyclerView. You can view sourcecode and download preview app in link above.</p>"
+    },
+    {
         "project_name": "Optimus",
         "type": "web",
         "status": "released",
