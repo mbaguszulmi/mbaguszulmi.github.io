@@ -1,5 +1,17 @@
 [
     {
+        "project_name": "KUA-Batam",
+        "type": "web",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/kua-batam.png",
+        "source": null,
+        "preview": {
+            "url": "https://kua.mbaguszulmi.com/",
+            "type": "live"
+        },
+        "description": "<p>This project is dedicated to my client for creating business management Information System in Religious Affairs Office of Batam (KUA Batam). This project is created with CodeIgniter 4. Have 2 user roles, Admin and Head Office.</p><p>You can try these with this credentials <br><ul><li>Admin<br>admin:admin</li><li>Head Office<br>atasan1:atasan1</li></ul></p>"
+    },
+    {
         "project_name": "SIMSETA",
         "type": "web",
         "status": "released",
