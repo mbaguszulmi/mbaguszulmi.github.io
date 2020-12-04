@@ -1,18 +1,30 @@
 [
     {
-        "name": "Progressive Web Apps Certificate",
+        "name": "Android Fundamentals",
+        "given_by": "Dicoding",
+        "url": "/assets/images/certificates/dicoding_learning-android-fundamentals.jpg"
+
+    },
+    {
+        "name": "Kotlin for Beginer",
+        "given_by": "Dicoding",
+        "url": "/assets/images/certificates/dicoding_getting-started-with-kotlin.jpg"
+
+    },
+    {
+        "name": "Progressive Web Apps",
         "given_by": "Dicoding",
         "url": "/assets/images/certificates/dicoding_membangun-progressive-web-apps.jpg"
 
     },
     {
-        "name": "Beginer Web Course Certificate",
+        "name": "Beginer Web Course",
         "given_by": "Dicoding",
         "url": "/assets/images/certificates/dicoding_belajar-dasar-pemrograman-web.jpg"
 
     },
     {
-        "name": "Beginer Android Course Certificate",
+        "name": "Beginer Android Course",
         "given_by": "Dicoding",
         "url": "/assets/images/certificates/dicoding_belajar-membuat-aplikasi-android-untuk-pemula.jpg"
 
