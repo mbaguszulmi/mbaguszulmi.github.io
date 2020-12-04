@@ -57,12 +57,11 @@ class About extends Component {
                             <h3 className="card-title">About me</h3>
 
                             <p>
-                                Hi, my name is Muhammad Bagus Zulmi. I am a 
-                                Informatics Engineering student at Universitas 
-                                Negeri Malang. Currently I will take 6th semester. 
-                                I really like developing information systems, especially 
-                                in the form of web and Android applications. I also 
-                                like artificial intelligence.
+                                Hi, my name is Muhammad Bagus Zulmi. I am a Informatics 
+                                Engineering student at Universitas Negeri Malang. Currently 
+                                I'm taking 7th semester. I really like developing 
+                                information systems, especially in the form of web and 
+                                Android applications. I also like artificial intelligence.
                             </p>
                         </div>
                     </div>
@@ -76,7 +75,7 @@ class About extends Component {
                             <div className="card-content">
                                 <div className="content-item">
                                     <img src={location_icon} alt="location icon" />
-                                    <span>Jl. Terusan Surabaya 55A RT. 01 RW. 03, Klojen, Malang</span>
+                                    <span>Jl. Bukirsari, Tulusrejo, Malang</span>
                                 </div>
 
                                 <div className="content-item">
@@ -180,8 +179,8 @@ class About extends Component {
 
                                 <div className="experience">
                                     <div className="date">Juni - September 2019</div>
-                                    <div className="experience-place">Jurusan Teknik Elektro, Universitas Negeri Malang</div>
-                                    <div className="experience-description">Proyek dengan dosen Universitas Negeri Malang untuk membuat aplikasi web simulasi UKK SMK TKJ Ibnu Abbas Bantur.</div>
+                                    <div className="experience-place">Electrical Departement, Universitas Negeri Malang</div>
+                                    <div className="experience-description">A project with a Malang State University lecturer to create a simulation web application for the Skills Competency Examination (UKK) of SMK TKJ Ibnu Abbas Bantur.</div>
                                 </div>
                                 
                                 <div className="dot">
@@ -191,16 +190,36 @@ class About extends Component {
                                 <div className="experience">
                                     <div className="date">Maret - April 2019</div>
                                     <div className="experience-place">Self Employee</div>
-                                    <div className="experience-description">Membuat sistem informasi tentang Arsip surat.</div>
+                                    <div className="experience-description">Creating an information system about mail archives.</div>
                                 </div>
-                                <div className="dot last">
+                                <div className="dot">
                                     <img src={dot_progress} alt="dot"/>
                                 </div>
 
                                 <div className="experience">
                                     <div className="date">Juni - November 2018</div>
-                                    <div className="experience-place">Jurusan HKN, Universitas Negeri Malang</div>
-                                    <div className="experience-description">Membuat aplikasi android "Madani Citizine".</div>
+                                    <div className="experience-place">Department of Law and Citizenship, Universitas Negeri Malang</div>
+                                    <div className="experience-description">Made the android application "Madani Citizine".</div>
+                                </div>
+
+                                <div className="dot">
+                                    <img src={dot_progress} alt="dot"/>
+                                </div>
+
+                                <div className="experience">
+                                    <div className="date">March 2020 - Now</div>
+                                    <div className="experience-place">Android Developer at Illiyin Studio Malang</div>
+                                    <div className="experience-description">Managing SIHMI App, Developing Global Bakery App (KasirApp), Managing Jendela Muslim App, Managing servers.</div>
+                                </div>
+
+                                <div className="dot last">
+                                    <img src={dot_progress} alt="dot"/>
+                                </div>
+
+                                <div className="experience">
+                                    <div className="date">June 2020 - Now</div>
+                                    <div className="experience-place">Freelance Web and Android Developer</div>
+                                    <div className="experience-description">Creating SIMSETA, KUA Batam Web, Optimus Sales Management app, Population registration application app (mobile android and web).</div>
                                 </div>
                             </div>
                         </div>
