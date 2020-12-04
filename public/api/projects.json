@@ -33,7 +33,7 @@
             "url": "https://simseta.mbaguszulmi.com/",
             "type": "live"
         },
-        "description": "<p>This project is dedicated to my client for creating Recruitment management Information System in Banjarmasin Labor Department (Dinas Tenaga Kerja Banjarmasin). This project is created with CodeIgniter 4. Have 2 user roles, Admin and User (Worker Candidate). So Worker documents and requirements from Candidate will be selected by Admin.</p>"
+        "description": "<p>This project is dedicated to my client for creating Recruitment management Information System in Banjarmasin Labor Department (Dinas Tenaga Kerja Banjarmasin). This project is created with CodeIgniter 4. Have 2 user roles, Admin and User (Worker Candidate). So Worker documents and requirements from Candidate will be selected by Admin.</p><p>You can try to register as worker candidate and login to admin with this credential:<br>admin:password</p>"
     },
     {
         "project_name": "Food Order",
