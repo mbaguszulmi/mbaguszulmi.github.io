@@ -212,7 +212,7 @@ class About extends Component {
                                     <div className="experience-description">Managing SIHMI App, Developing Global Bakery App (KasirApp), Managing Jendela Muslim App, Managing servers.</div>
                                 </div>
 
-                                <div className="dot last">
+                                <div className="dot">
                                     <img src={dot_progress} alt="dot"/>
                                 </div>
 
