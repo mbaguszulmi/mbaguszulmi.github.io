@@ -1,12 +1,12 @@
 [
     {
         "skill_name": "Android Java",
-        "percent": 60,
+        "percent": 80,
         "thumbnail": "/assets/images/skills/android.png"
     },
     {
         "skill_name": "Android Kotlin",
-        "percent": 55,
+        "percent": 80,
         "thumbnail": "/assets/images/skills/android.png"
     },
     {
@@ -26,11 +26,16 @@
     },
     {
         "skill_name": "PHP",
-        "percent": 80,
+        "percent": 85,
         "thumbnail": "/assets/images/skills/php.png"
     },
     {
-        "skill_name": "Code Igniter PHP Framework",
+        "skill_name": "Code Igniter 3",
+        "percent": 85,
+        "thumbnail": "/assets/images/skills/codeigniter.png"
+    },
+    {
+        "skill_name": "Code Igniter 4",
         "percent": 80,
         "thumbnail": "/assets/images/skills/codeigniter.png"
     },
@@ -51,12 +56,12 @@
     },
     {
         "skill_name": "Python",
-        "percent": 72,
+        "percent": 75,
         "thumbnail": "/assets/images/skills/python.png"
     },
     {
         "skill_name": "ReactJS",
-        "percent": 65,
+        "percent": 75,
         "thumbnail": "/assets/images/skills/reactjs.png"
     },
     {
