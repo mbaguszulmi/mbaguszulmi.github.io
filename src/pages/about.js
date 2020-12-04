@@ -178,7 +178,7 @@ class About extends Component {
                                 </div>
 
                                 <div className="experience">
-                                    <div className="date">Juni - September 2019</div>
+                                    <div className="date">June - September 2019</div>
                                     <div className="experience-place">Electrical Departement, Universitas Negeri Malang</div>
                                     <div className="experience-description">A project with a Malang State University lecturer to create a simulation web application for the Skills Competency Examination (UKK) of SMK TKJ Ibnu Abbas Bantur.</div>
                                 </div>
