@@ -207,7 +207,7 @@ class About extends Component {
                                 </div>
 
                                 <div className="experience">
-                                    <div className="date">March 2020 - Now</div>
+                                    <div className="date">March - November 2020</div>
                                     <div className="experience-place">Android Developer at Illiyin Studio Malang</div>
                                     <div className="experience-description">Managing SIHMI App, Developing Global Bakery App (KasirApp), Managing Jendela Muslim App, Managing servers.</div>
                                 </div>
