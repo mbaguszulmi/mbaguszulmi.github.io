@@ -24,6 +24,18 @@
         "description": "<p>This app named \"GithubUser\", built with android studio (in kotlin language). This app built for assignment of Dicoding Beginer Android Course. In this app, we can explore users in github and show details about the user. This app also connected with official Github API. The list in homepage built with RecyclerView. You can view sourcecode and download preview app in link above.</p>"
     },
     {
+        "project_name": "SIMSETA",
+        "type": "web",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/simseta.png",
+        "source": null,
+        "preview": {
+            "url": "https://simseta.mbaguszulmi.com/",
+            "type": "live"
+        },
+        "description": "<p>This project is dedicated to my client for creating Recruitment management Information System in Banjarmasin Labor Department (Dinas Tenaga Kerja Banjarmasin). This project is created with CodeIgniter 4. Have 2 user roles, Admin and User (Worker Candidate). So Worker documents and requirements from Candidate will be selected by Admin.</p><p>You can try to register as worker candidate and login to admin with this credential:<br>admin:password</p>"
+    },
+    {
         "project_name": "Optimus",
         "type": "web",
         "status": "released",
@@ -33,7 +45,7 @@
             "url": "https://optimus.mbaguszulmi.com/",
             "type": "live"
         },
-        "description": "<p>This project is dedicated to my client for creating sales management Information System in CV. Optimus Glorious. This project is created with CodeIgniter 4. Have 2 user roles, Admin and Cashier.</p><p>You can try these with this credentials <br><ul><li>Admin<br>admin:admin</li><li>Cashier<br>kasir:kasir</li></ul></p>"
+        "description": "<p>This project is dedicated to my client for creating sales management Information System in CV. Optimus Glorious. This project is created with CodeIgniter 3. Have 2 user roles, Admin and Cashier.</p><p>You can try these with this credentials <br><ul><li>Admin<br>admin:admin</li><li>Cashier<br>kasir:kasir</li></ul></p>"
     },
     {
         "project_name": "KUA-Batam",
@@ -45,19 +57,7 @@
             "url": "https://kua.mbaguszulmi.com/",
             "type": "live"
         },
-        "description": "<p>This project is dedicated to my client for creating business management Information System in Religious Affairs Office of Batam (KUA Batam). This project is created with CodeIgniter 4. Have 2 user roles, Admin and Head Office.</p><p>You can try these with this credentials <br><ul><li>Admin<br>admin:admin</li><li>Head Office<br>atasan1:atasan</li></ul></p>"
-    },
-    {
-        "project_name": "SIMSETA",
-        "type": "web",
-        "status": "released",
-        "thumbnail_url": "/assets/images/projects/simseta.png",
-        "source": null,
-        "preview": {
-            "url": "https://simseta.mbaguszulmi.com/",
-            "type": "live"
-        },
-        "description": "<p>This project is dedicated to my client for creating Recruitment management Information System in Banjarmasin Labor Department (Dinas Tenaga Kerja Banjarmasin). This project is created with CodeIgniter 4. Have 2 user roles, Admin and User (Worker Candidate). So Worker documents and requirements from Candidate will be selected by Admin.</p><p>You can try to register as worker candidate and login to admin with this credential:<br>admin:password</p>"
+        "description": "<p>This project is dedicated to my client for creating business management Information System in Religious Affairs Office of Batam (KUA Batam). This project is created with CodeIgniter 3. Have 2 user roles, Admin and Head Office.</p><p>You can try these with this credentials <br><ul><li>Admin<br>admin:admin</li><li>Head Office<br>atasan1:atasan</li></ul></p>"
     },
     {
         "project_name": "Food Order",
