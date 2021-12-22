@@ -273,65 +273,6 @@ class About extends Component {
                                         Android Developer, Build and android app named "Madani Citizine"
                                     </div>
                                 </div>
-
-                                {/* <div className="dot">
-                                    <img src={dot_progress} alt="dot" />
-                                </div>
-
-                                <div className="experience">
-                                    <div className="date">June - September 2019</div>
-                                    <div className="experience-place">Electrical Departement, Universitas Negeri Malang</div>
-                                    <div className="experience-description">A project with a Malang State University lecturer to create a simulation web application for the Skills Competency Examination (UKK) of SMK TKJ Ibnu Abbas Bantur.</div>
-                                </div>
-
-                                <div className="dot">
-                                    <img src={dot_progress} alt="dot" />
-                                </div>
-
-                                <div className="experience">
-                                    <div className="date">March - April 2019</div>
-                                    <div className="experience-place">Self Employee</div>
-                                    <div className="experience-description">Creating an information system about mail archives.</div>
-                                </div>
-                                <div className="dot">
-                                    <img src={dot_progress} alt="dot" />
-                                </div>
-
-                                <div className="experience">
-                                    <div className="date">June - November 2018</div>
-                                    <div className="experience-place">Department of Law and Citizenship, Universitas Negeri Malang</div>
-                                    <div className="experience-description">Made the android application "Madani Citizine".</div>
-                                </div>
-
-                                <div className="dot">
-                                    <img src={dot_progress} alt="dot" />
-                                </div>
-
-                                <div className="experience">
-                                    <div className="date">March - November 2020</div>
-                                    <div className="experience-place">Android Developer at Illiyin Studio Malang</div>
-                                    <div className="experience-description">Managing SIHMI App, Developing Global Bakery App (KasirApp), Managing Jendela Muslim App, Managing servers.</div>
-                                </div>
-
-                                <div className="dot">
-                                    <img src={dot_progress} alt="dot" />
-                                </div>
-
-                                <div className="experience">
-                                    <div className="date">June - July 2020</div>
-                                    <div className="experience-place">Web Developer at KPRI Universitas Negeri Malang</div>
-                                    <div className="experience-description">Web developer Intern, responsible for developing Gate Login (SSO) and Web E-Commerce.</div>
-                                </div>
-
-                                <div className="dot last">
-                                    <img src={dot_progress} alt="dot" />
-                                </div>
-
-                                <div className="experience">
-                                    <div className="date">June 2020 - Now</div>
-                                    <div className="experience-place">Freelance Web and Android Developer</div>
-                                    <div className="experience-description">Creating SIMSETA, KUA Batam Web, Optimus Sales Management app, Population registration application app (mobile android and web).</div>
-                                </div> */}
                             </div>
                         </div>
                     </div>
