@@ -232,7 +232,7 @@ class About extends Component {
 
                                 <div className="experience">
                                     <div className="date">Jun - Jul 2020</div>
-                                    <div className="experience-place"> | Full-stack Web Developer (Internship)</div>
+                                    <div className="experience-place">KPRI Universitas Negeri Malang | Full-stack Web Developer (Internship)</div>
                                     <div className="experience-description">
                                         Full-stack Web Developer, Build Login Gate (SSO) and e-commerce.
                                     </div>
