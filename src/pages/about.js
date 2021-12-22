@@ -1,20 +1,20 @@
 import React, { Component } from "react"
-import pearl from '../assets/images/pearl.jpg'
-import location_icon from '../assets/images/location_pin.svg'
-import web_icon from '../assets/images/mdi_web_tiny.svg'
-import tel_icon from '../assets/images/tel_icon.svg'
-import mail_icon from '../assets/images/ic_round-mail.svg'
 import born_icon from '../assets/images/birthday-cake.svg'
 import dot_progress from '../assets/images/dot_progress.svg'
-import ProgressBar from '../components/progress-bar'
+import mail_icon from '../assets/images/ic_round-mail.svg'
+import location_icon from '../assets/images/location_pin.svg'
+import web_icon from '../assets/images/mdi_web_tiny.svg'
+import pearl from '../assets/images/pearl.jpg'
+import tel_icon from '../assets/images/tel_icon.svg'
 import Api from '../assets/js/api'
+import ProgressBar from '../components/progress-bar'
 import SkillCard from '../components/skill-card'
 
 class About extends Component {
     state = {}
     componentDidMount() {
         document.title = "About Me | Muhammad Bagus Zulmi"
-        
+
         Api.getCertificate().then(data => {
             let certificateElems = []
 
@@ -25,7 +25,7 @@ class About extends Component {
                     </a>
                 )
             });
-            
+
             this.setState({
                 certificates: certificateElems
             })
@@ -39,7 +39,7 @@ class About extends Component {
                     <SkillCard skillName={skill.skill_name} percent={`${skill.percent}%`} skillImage={skill.thumbnail} key={index} />
                 )
             });
-            
+
             this.setState({
                 skills: skillElems
             })
@@ -57,11 +57,10 @@ class About extends Component {
                             <h3 className="card-title">About me</h3>
 
                             <p>
-                                Hi, my name is Muhammad Bagus Zulmi. I am a Informatics 
-                                Engineering student at Universitas Negeri Malang. Currently 
-                                I'm taking 7th semester. I really like developing 
-                                information systems, especially in the form of web and 
-                                Android applications. I also like artificial intelligence.
+                                I'm a professional Android and Web Developer. I graduated from
+                                Universitas Negeri Malang with Bachelor Degree of Engineering (S.T.) in
+                                Informatics Engineering Course. I Have experienced in many software
+                                development especially in Android and Web.
                             </p>
                         </div>
                     </div>
@@ -75,7 +74,7 @@ class About extends Component {
                             <div className="card-content">
                                 <div className="content-item">
                                     <img src={location_icon} alt="location icon" />
-                                    <span>Jl. Bukirsari, Tulusrejo, Malang</span>
+                                    <span>Malang</span>
                                 </div>
 
                                 <div className="content-item">
@@ -90,7 +89,7 @@ class About extends Component {
 
                                 <div className="content-item">
                                     <img src={web_icon} alt="location icon" />
-                                    <span>https://mbaguszulmi.github.io</span>
+                                    <span>https://mbaguszulmi.com</span>
                                 </div>
 
                                 <div className="content-item">
@@ -105,48 +104,37 @@ class About extends Component {
 
                             <div className="card-content">
                                 <div className="dot">
-                                    <img src={dot_progress} alt="dot"/>
+                                    <img src={dot_progress} alt="dot" />
                                 </div>
 
                                 <div className="school">
-                                    <div className="year">2017 - Now</div>
+                                    <div className="year">2017 - 2021</div>
                                     <div className="school-name">
-                                        S1 Teknik Informatika <br/>
+                                        Informatics Engineering, BE (S.T.) <br />
                                         Universitas Negeri Malang
                                     </div>
                                 </div>
 
                                 <div className="dot">
-                                    <img src={dot_progress} alt="dot"/>
+                                    <img src={dot_progress} alt="dot" />
                                 </div>
 
                                 <div className="school">
                                     <div className="year">2014 - 2017</div>
                                     <div className="school-name">
-                                        IPA <br/>
+                                        IPA (Science) <br />
                                         SMA Negeri 11 Surabaya
                                     </div>
                                 </div>
 
-                                <div className="dot">
-                                    <img src={dot_progress} alt="dot"/>
+                                <div className="dot last">
+                                    <img src={dot_progress} alt="dot" />
                                 </div>
 
                                 <div className="school">
                                     <div className="year">2011 - 2014</div>
                                     <div className="school-name">
                                         SMP Negeri 20 Surabaya
-                                    </div>
-                                </div>
-
-                                <div className="dot last">
-                                    <img src={dot_progress} alt="dot"/>
-                                </div>
-
-                                <div className="school">
-                                    <div className="year">2005 - 2011</div>
-                                    <div className="school-name">
-                                        MI Nyai Hj. Ashfiyah
                                     </div>
                                 </div>
                             </div>
@@ -164,9 +152,6 @@ class About extends Component {
 
                             <span className="language-name">English</span>
                             <ProgressBar percent="60%" />
-
-                            <span className="language-name">Javanese</span>
-                            <ProgressBar percent="90%" />
                         </div>
 
                         <div className="card experience-card">
@@ -174,7 +159,123 @@ class About extends Component {
 
                             <div className="card-content">
                                 <div className="dot">
-                                    <img src={dot_progress} alt="dot"/>
+                                    <img src={dot_progress} alt="dot" />
+                                </div>
+
+                                <div className="experience">
+                                    <div className="date">Mar 2021 - Present</div>
+                                    <div className="experience-place">Finfleet | IT Developer</div>
+                                    <div className="experience-description">
+                                        <ul>
+                                            <li>
+                                                Managing REST API
+                                            </li>
+                                            <li>
+                                                Managing Front-end in ReactJS and Angular
+                                            </li>
+                                            <li>
+                                                Managing existing Android App for Driver
+                                            </li>
+                                            <li>
+                                                Planning and Creating a Flutter Project for
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className="dot">
+                                    <img src={dot_progress} alt="dot" />
+                                </div>
+
+                                <div className="experience">
+                                    <div className="date">Mar 2019 - Present</div>
+                                    <div className="experience-place">Freelance | Android and Web Developer</div>
+                                    <div className="experience-description">
+                                        <ul>
+                                            <li>
+                                                Build Letter Archiver Information System using CodeIgniter
+                                            </li>
+                                            <li>
+                                                Building Information System for Social and Worker Agency in Banjarmasin
+                                            </li>
+                                            <li>
+                                                Fix and build Information System for Kantor Urusan Agama Batu Ampar
+                                            </li>
+                                            <li>
+                                                Fix and build Information System for Food order and delivery
+                                            </li>
+                                            <li>
+                                                Creating Education game "Let's counting" for helping children to learn about numbers
+                                            </li>
+                                            <li>
+                                                Maintaining Siginjai App for Polda Jambi, led by Illiyin Studio team.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className="dot">
+                                    <img src={dot_progress} alt="dot" />
+                                </div>
+
+                                <div className="experience">
+                                    <div className="date">Mar - Dec 2020</div>
+                                    <div className="experience-place">Illiyin Studio | Android Developer</div>
+                                    <div className="experience-description">
+                                        Maintaining SIHMI APP, developing Global Bakery App, maintaining Jendela Muslim App, build and maintain server.
+                                    </div>
+                                </div>
+
+                                <div className="dot">
+                                    <img src={dot_progress} alt="dot" />
+                                </div>
+
+                                <div className="experience">
+                                    <div className="date">Jun - Jul 2020</div>
+                                    <div className="experience-place"> | Full-stack Web Developer (Internship)</div>
+                                    <div className="experience-description">
+                                        Full-stack Web Developer, Build Login Gate (SSO) and e-commerce.
+                                    </div>
+                                </div>
+
+                                <div className="dot">
+                                    <img src={dot_progress} alt="dot" />
+                                </div>
+
+                                <div className="experience">
+                                    <div className="date">Jun - Sep 2019</div>
+                                    <div className="experience-place">Jurusan Teknik Elektro, Universitas Negeri Malang | Full-stack Web Developer</div>
+                                    <div className="experience-description">
+                                        Build Information System of UKK (Uji Kompetensi Keahlian) simulation for SMK TKJ Ibnu Abbas, Bantur using CodeIgniter
+                                    </div>
+                                </div>
+
+                                <div className="dot">
+                                    <img src={dot_progress} alt="dot" />
+                                </div>
+
+                                <div className="experience">
+                                    <div className="date">Aug - Nov 2018</div>
+                                    <div className="experience-place">Jurusan Teknik Elektro, Universitas Negeri Malang | Assistant Lecturer</div>
+                                    <div className="experience-description">
+                                        Assistant Lecturer for managing practicum activities in Algorithm and Programming Course.
+                                    </div>
+                                </div>
+
+                                <div className="dot last">
+                                    <img src={dot_progress} alt="dot" />
+                                </div>
+
+                                <div className="experience">
+                                    <div className="date">Jul - Nov 2018</div>
+                                    <div className="experience-place">Jurusan HKN, Universitas Negeri Malang | Android and Web Developer</div>
+                                    <div className="experience-description">
+                                        Android Developer, Build and android app named "Madani Citizine"
+                                    </div>
+                                </div>
+
+                                {/* <div className="dot">
+                                    <img src={dot_progress} alt="dot" />
                                 </div>
 
                                 <div className="experience">
@@ -182,9 +283,9 @@ class About extends Component {
                                     <div className="experience-place">Electrical Departement, Universitas Negeri Malang</div>
                                     <div className="experience-description">A project with a Malang State University lecturer to create a simulation web application for the Skills Competency Examination (UKK) of SMK TKJ Ibnu Abbas Bantur.</div>
                                 </div>
-                                
+
                                 <div className="dot">
-                                    <img src={dot_progress} alt="dot"/>
+                                    <img src={dot_progress} alt="dot" />
                                 </div>
 
                                 <div className="experience">
@@ -193,7 +294,7 @@ class About extends Component {
                                     <div className="experience-description">Creating an information system about mail archives.</div>
                                 </div>
                                 <div className="dot">
-                                    <img src={dot_progress} alt="dot"/>
+                                    <img src={dot_progress} alt="dot" />
                                 </div>
 
                                 <div className="experience">
@@ -203,7 +304,7 @@ class About extends Component {
                                 </div>
 
                                 <div className="dot">
-                                    <img src={dot_progress} alt="dot"/>
+                                    <img src={dot_progress} alt="dot" />
                                 </div>
 
                                 <div className="experience">
@@ -213,7 +314,7 @@ class About extends Component {
                                 </div>
 
                                 <div className="dot">
-                                    <img src={dot_progress} alt="dot"/>
+                                    <img src={dot_progress} alt="dot" />
                                 </div>
 
                                 <div className="experience">
@@ -223,14 +324,14 @@ class About extends Component {
                                 </div>
 
                                 <div className="dot last">
-                                    <img src={dot_progress} alt="dot"/>
+                                    <img src={dot_progress} alt="dot" />
                                 </div>
 
                                 <div className="experience">
                                     <div className="date">June 2020 - Now</div>
                                     <div className="experience-place">Freelance Web and Android Developer</div>
                                     <div className="experience-description">Creating SIMSETA, KUA Batam Web, Optimus Sales Management app, Population registration application app (mobile android and web).</div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
