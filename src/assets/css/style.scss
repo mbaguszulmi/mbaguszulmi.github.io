@@ -232,7 +232,7 @@ body {
                 div.my-avatar {
                     width: 200px;
                     height: 200px;
-                    background: center / cover url('../images/me.jpg');
+                    background: center / cover url('../images/me.png');
                     border-radius: 50%;
 
                     @include phone-media {
