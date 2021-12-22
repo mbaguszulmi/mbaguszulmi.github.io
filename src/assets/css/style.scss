@@ -544,19 +544,24 @@ body {
                     }
 
                     div.card {
-                        max-width: 525px;
+                        max-width: 720px;
                         width: 100%;
 
                         &.language {
+                            flex: 1;
+                            margin-right: 40px;
+
                             span.language-name {
                                 font-size: 18px;
                                 color: #838383;
-                                margin: 20px 0 10px;
+                                margin: 20px 0 10px 0;
                                 display: block;
                             }
                         }
 
                         &.experience-card {
+                            flex: 2;
+
                             @include phone-media {
                                 margin-bottom: 20px;
                             }
