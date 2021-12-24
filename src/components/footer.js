@@ -1,6 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../assets/images/logo.png'
-import {Link} from 'react-router-dom'
 import Socials from '../components/socials'
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="footer-column">
                 <div className="footer-column-wrapper">
                     <div className="footer-content logo">
-                        <img src={logo} alt="logo"/>
+                        <img src={logo} alt="logo" />
                     </div>
                     <div className="footer-content usefull-links">
                         <h3 className="footer-title">Usefull Links</h3>
@@ -21,13 +21,13 @@ const Footer = () => {
                     </div>
                     <div className="footer-content stay-connected">
                         <h3 className="footer-title">Stay Connected</h3>
-                        <Socials/>
+                        <Socials />
                     </div>
                 </div>
             </div>
 
             <div className="footer-copy">
-                Muhammad Bagus Zulmi, Copyright &copy; 2019 
+                Muhammad Bagus Zulmi, Copyright &copy; 2021
             </div>
         </footer>
     )
