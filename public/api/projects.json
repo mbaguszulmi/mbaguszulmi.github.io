@@ -30,19 +30,13 @@
         "description": ""
     },
     {
-        "project_name": "",
-        "type": "",
+        "project_name": "Simpenduk",
+        "type": "android",
         "status": "released",
-        "thumbnail_url": "",
-        "source": {
-            "url": "",
-            "type": ""
-        },
-        "preview": {
-            "url": "",
-            "type": ""
-        },
-        "description": ""
+        "thumbnail_url": "/assets/images/projects/Simpenduk.png",
+        "source": null,
+        "preview": null,
+        "description": "<p> Simpenduk is an Information system that is used to manage the data of the population in Indonesia. It has two parts, one is the Android App for filling data for every Family, and the other is the website for review the data and creating News. Also, we can view the latest news in the Android App. </p> <p> Website Features: <ul> <li>Dashboard</li> <li>Export data</li> <li>Review data</li> <li>Creating News</li> <li>REST API</li> <li>OCR API for KTP (Indonesian ID) and KK (Family Card)</li> </ul> Android App Features: <ul> <li>Sign up and Sign in</li> <li>Creating family Data</li> <li>Check data submission status</li> <li>Scanner for KTP and KK to change the image to be flatten like document scan</li> <li>Read the latest news</li> </ul> </p>"
     },
     {
         "project_name": "React TODO",
