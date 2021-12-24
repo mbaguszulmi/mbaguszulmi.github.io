@@ -1,18 +1,15 @@
 [
     {
-        "project_name": "",
-        "type": "",
+        "project_name": "Let's Counting",
+        "type": "android",
         "status": "released",
-        "thumbnail_url": "",
-        "source": {
-            "url": "",
-            "type": ""
-        },
+        "thumbnail_url": "/assets/images/projects/LetsCounting.png",
+        "source": null,
         "preview": {
-            "url": "",
-            "type": ""
+            "url": "https://letscounting.github.io/",
+            "type": "live"
         },
-        "description": ""
+        "description": "<p> This app is basically a Game. Built with Processing 3 and Android Java. This game will help children to learn about numbers. There are 7 stages. Each stage completed will resulting stars to be added to the score. For more information about the game, please visit the link above. </p> <p> Technologies used: <ul> <li>Android Java</li> <li>Processing 3</li> <li>Android Viewmodel</li> <li>Room DB</li> </ul> </p>"
     },
     {
         "project_name": "MovieDB App",
