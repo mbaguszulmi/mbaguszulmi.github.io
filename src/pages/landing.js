@@ -53,7 +53,7 @@ class Landing extends Component {
                 <header className="header">
                     <div className="my-avatar"></div>
                     <h1 className="my-name">Muhammad Bagus Zulmi</h1>
-                    <p className="description">Web and Android Developer</p>
+                    <p className="description">Android and Web Developer</p>
                     <Socials />
                     <img id="btn-down" className="btn-down" src={btn_down} alt="down button" />
                 </header>
