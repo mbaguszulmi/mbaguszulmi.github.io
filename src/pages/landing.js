@@ -1,10 +1,10 @@
 import React, { Component } from "react"
-import Socials from '../components/socials'
-import btn_down from '../assets/images/BTN_down.svg'
 import { Link } from 'react-router-dom'
-import ProjectCard from '../components/project-card'
-import '../assets/js/slider'
+import btn_down from '../assets/images/BTN_down.svg'
 import Api from '../assets/js/api'
+import '../assets/js/slider'
+import ProjectCard from '../components/project-card'
+import Socials from '../components/socials'
 
 class Landing extends Component {
     state = {}
@@ -28,14 +28,14 @@ class Landing extends Component {
                 if (index > 4) return
 
                 projectElems.push(
-                    <ProjectCard 
+                    <ProjectCard
                         title={project.project_name}
                         thumbnail={project.thumbnail_url}
                         label={project.status}
                         type={project.type}
                         limit="limit"
-                        href={`/projects/${index+1}`}
-                        key={index+1}
+                        href={`/projects/${index + 1}`}
+                        key={index + 1}
                         onClick={window.projectCardClick}
                     />
                 )
@@ -54,7 +54,7 @@ class Landing extends Component {
                     <div className="my-avatar"></div>
                     <h1 className="my-name">Muhammad Bagus Zulmi</h1>
                     <p className="description">Web and Android Developer</p>
-                    <Socials/>
+                    <Socials />
                     <img id="btn-down" className="btn-down" src={btn_down} alt="down button" />
                 </header>
 
@@ -64,11 +64,10 @@ class Landing extends Component {
                     <div className="about-me-content-wrapper">
                         <div className="about-me-content">
                             <p>
-                                Hi, my name is Muhammad Bagus Zulmi. I am a Informatics 
-                                Engineering student at Universitas Negeri Malang. Currently 
-                                I'm taking 7th semester. I really like developing 
-                                information systems, especially in the form of web and 
-                                Android applications. I also like artificial intelligence.
+                                I'm a professional Android and Web Developer. I graduated from
+                                Universitas Negeri Malang with Bachelor Degree of Engineering (S.T.) in
+                                Informatics Engineering Course. I Have experienced in many software
+                                development especially in Android and Web.
                             </p>
 
                             <Link to="/about" className="btn main rounded">Read more</Link>
