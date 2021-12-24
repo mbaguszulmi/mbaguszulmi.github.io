@@ -177,7 +177,7 @@ class About extends Component {
                                                 Managing existing Android App for Driver
                                             </li>
                                             <li>
-                                                Planning and Creating a Flutter Project for
+                                                Planning and Creating a Flutter Project for Monitoring Cleaning, attendance, and cash receipt
                                             </li>
                                         </ul>
                                     </div>
@@ -208,7 +208,10 @@ class About extends Component {
                                                 Creating Education game "Let's counting" for helping children to learn about numbers
                                             </li>
                                             <li>
-                                                Maintaining Siginjai App for Polda Jambi, led by Illiyin Studio team.
+                                                Maintaining Siginjai App for Polda Jambi (Android Native and Flutter), led by Illiyin Studio team.
+                                            </li>
+                                            <li>
+                                                Enhancing Online Shop Admin IS, REST API, and Online Shop App (Flutter) for Taniqu. They offer products from Agricultural.
                                             </li>
                                         </ul>
                                     </div>
@@ -222,7 +225,7 @@ class About extends Component {
                                     <div className="date">Mar - Dec 2020</div>
                                     <div className="experience-place">Illiyin Studio | Android Developer</div>
                                     <div className="experience-description">
-                                        Maintaining SIHMI APP, developing Global Bakery App, maintaining Jendela Muslim App, build and maintain server.
+                                        Maintaining SIHMI APP, developing Global Bakery App, maintaining Jendela Muslim App (Flutter), build and maintain server.
                                     </div>
                                 </div>
 
