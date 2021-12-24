@@ -1,5 +1,65 @@
 [
     {
+        "project_name": "",
+        "type": "",
+        "status": "released",
+        "thumbnail_url": "",
+        "source": {
+            "url": "",
+            "type": ""
+        },
+        "preview": {
+            "url": "",
+            "type": ""
+        },
+        "description": ""
+    },
+    {
+        "project_name": "",
+        "type": "",
+        "status": "released",
+        "thumbnail_url": "",
+        "source": {
+            "url": "",
+            "type": ""
+        },
+        "preview": {
+            "url": "",
+            "type": ""
+        },
+        "description": ""
+    },
+    {
+        "project_name": "",
+        "type": "",
+        "status": "released",
+        "thumbnail_url": "",
+        "source": {
+            "url": "",
+            "type": ""
+        },
+        "preview": {
+            "url": "",
+            "type": ""
+        },
+        "description": ""
+    },
+    {
+        "project_name": "React TODO",
+        "type": "web",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/ReactTodo.png",
+        "source": {
+            "url": "https://github.com/mbaguszulmi/react-todo",
+            "type": "git"
+        },
+        "preview": {
+            "url": "https://mbaguszulmi.github.io/react-todo/",
+            "type": "live"
+        },
+        "description": "<p> This app is developed using ReactJS and Redux. In this app, we can add, edit, and delete Todo list. Every Todo item can be checked. Learn more about this project in the github or preview links above. </p>"
+    },
+    {
         "project_name": "Global Bakery Android Apps",
         "type": "android",
         "status": "released",
