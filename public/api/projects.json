@@ -15,19 +15,15 @@
         "description": ""
     },
     {
-        "project_name": "",
-        "type": "",
+        "project_name": "MovieDB App",
+        "type": "android",
         "status": "released",
-        "thumbnail_url": "",
+        "thumbnail_url": "/assets/images/projects/MovieDB.png",
         "source": {
-            "url": "",
-            "type": ""
+            "url": "https://github.com/mbaguszulmi/MovieDBApp",
+            "type": "git"
         },
-        "preview": {
-            "url": "",
-            "type": ""
-        },
-        "description": ""
+        "description": "<p> In this app, you can view a list of movies and TV Shows. Every list item can be clicked to view the details of the movie or TV Show. In this project, I provide unit tests and Instrumentation tests to test the app. </p> <p> Technologies used: <ul> <li>Kotlin</li> <li>Android Architecture Pattern</li> <li>Hilt (Dagger 2)</li> <li>Unit test</li> <li>Instrumentation test</li> <li>Mockito</li> </ul> </p>"
     },
     {
         "project_name": "Simpenduk",
