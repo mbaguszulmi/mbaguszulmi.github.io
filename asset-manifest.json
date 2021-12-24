@@ -1,31 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.a990fb33.chunk.css",
-    "main.js": "/static/js/main.7199531f.chunk.js",
-    "main.js.map": "/static/js/main.7199531f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c542aba9.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c542aba9.js.map",
-    "static/js/2.5b5cba7e.chunk.js": "/static/js/2.5b5cba7e.chunk.js",
-    "static/js/2.5b5cba7e.chunk.js.map": "/static/js/2.5b5cba7e.chunk.js.map",
+    "main.css": "/static/css/main.e8783d34.chunk.css",
+    "main.js": "/static/js/main.e7af94a2.chunk.js",
+    "main.js.map": "/static/js/main.e7af94a2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.eed1eee5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.eed1eee5.js.map",
+    "static/js/2.b4527758.chunk.js": "/static/js/2.b4527758.chunk.js",
+    "static/js/2.b4527758.chunk.js.map": "/static/js/2.b4527758.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.aa93ccd220bfc26db36510db60c9233f.js": "/precache-manifest.aa93ccd220bfc26db36510db60c9233f.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.a990fb33.chunk.css.map": "/static/css/main.a990fb33.chunk.css.map",
-    "static/js/2.5b5cba7e.chunk.js.LICENSE.txt": "/static/js/2.5b5cba7e.chunk.js.LICENSE.txt",
-    "static/media/BTN_down.svg": "/static/media/BTN_down.191c9214.svg",
-    "static/media/style.scss": "/static/media/youtubeicon.d4d70a01.svg",
-    "static/media/birthday-cake.svg": "/static/media/birthday-cake.94e99ed6.svg",
-    "static/media/dot_progress.svg": "/static/media/dot_progress.34e4f662.svg",
-    "static/media/ic_round-mail.svg": "/static/media/ic_round-mail.c8f34c4b.svg",
-    "static/media/location_pin.svg": "/static/media/location_pin.f268baa3.svg",
-    "static/media/logo.png": "/static/media/logo.857a16bb.png",
-    "static/media/mdi_web_tiny.svg": "/static/media/mdi_web_tiny.6c3be853.svg",
-    "static/media/tel_icon.svg": "/static/media/tel_icon.dc121ae1.svg"
+    "static/css/main.e8783d34.chunk.css.map": "/static/css/main.e8783d34.chunk.css.map",
+    "static/js/2.b4527758.chunk.js.LICENSE.txt": "/static/js/2.b4527758.chunk.js.LICENSE.txt",
+    "static/media/BTN_down.24b5089f.svg": "/static/media/BTN_down.24b5089f.svg",
+    "static/media/style.scss": "/static/media/youtubeicon.72bc96c7.svg",
+    "static/media/birthday-cake.c7561ce9.svg": "/static/media/birthday-cake.c7561ce9.svg",
+    "static/media/dot_progress.eda41952.svg": "/static/media/dot_progress.eda41952.svg",
+    "static/media/ic_round-mail.0f0efb5b.svg": "/static/media/ic_round-mail.0f0efb5b.svg",
+    "static/media/location_pin.306efe95.svg": "/static/media/location_pin.306efe95.svg",
+    "static/media/logo.9094cb31.png": "/static/media/logo.9094cb31.png",
+    "static/media/mdi_web_tiny.ff47b0ac.svg": "/static/media/mdi_web_tiny.ff47b0ac.svg",
+    "static/media/tel_icon.0bf5faac.svg": "/static/media/tel_icon.0bf5faac.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c542aba9.js",
-    "static/js/2.5b5cba7e.chunk.js",
-    "static/css/main.a990fb33.chunk.css",
-    "static/js/main.7199531f.chunk.js"
+    "static/js/runtime-main.eed1eee5.js",
+    "static/js/2.b4527758.chunk.js",
+    "static/css/main.e8783d34.chunk.css",
+    "static/js/main.e7af94a2.chunk.js"
   ]
 }

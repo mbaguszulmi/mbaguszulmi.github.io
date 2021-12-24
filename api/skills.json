@@ -1,13 +1,18 @@
 [
     {
         "skill_name": "Android Java",
-        "percent": 80,
+        "percent": 90,
         "thumbnail": "/assets/images/skills/android.png"
     },
     {
         "skill_name": "Android Kotlin",
-        "percent": 80,
+        "percent": 90,
         "thumbnail": "/assets/images/skills/android.png"
+    },
+    {
+        "skill_name": "Android Flutter",
+        "percent": 90,
+        "thumbnail": "/assets/images/skills/flutter.png"
     },
     {
         "skill_name": "HTML",
@@ -40,9 +45,9 @@
         "thumbnail": "/assets/images/skills/codeigniter.png"
     },
     {
-        "skill_name": "Android Flutter",
-        "percent": 75,
-        "thumbnail": "/assets/images/skills/flutter.png"
+        "skill_name": "Laravel 8",
+        "percent": 80,
+        "thumbnail": "/assets/images/skills/laravel.png"
     },
     {
         "skill_name": "C++",

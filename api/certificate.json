@@ -1,32 +1,32 @@
 [
     {
+        "name": "Go: The Complete Developer's Guide",
+        "given_by": "Udemy",
+        "url": "/assets/images/certificates/udemy_go-complete-developers-guide.jpg"
+    },
+    {
         "name": "Android Fundamentals",
         "given_by": "Dicoding",
         "url": "/assets/images/certificates/dicoding_learning-android-fundamentals.jpg"
-
     },
     {
         "name": "Kotlin for Beginer",
         "given_by": "Dicoding",
         "url": "/assets/images/certificates/dicoding_getting-started-with-kotlin.jpg"
-
     },
     {
         "name": "Progressive Web Apps",
         "given_by": "Dicoding",
         "url": "/assets/images/certificates/dicoding_membangun-progressive-web-apps.jpg"
-
     },
     {
         "name": "Beginer Web Course",
         "given_by": "Dicoding",
         "url": "/assets/images/certificates/dicoding_belajar-dasar-pemrograman-web.jpg"
-
     },
     {
         "name": "Beginer Android Course",
         "given_by": "Dicoding",
         "url": "/assets/images/certificates/dicoding_belajar-membuat-aplikasi-android-untuk-pemula.jpg"
-
     }
 ]

@@ -1,5 +1,52 @@
 [
     {
+        "project_name": "Let's Counting",
+        "type": "android",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/LetsCounting.png",
+        "source": null,
+        "preview": {
+            "url": "https://letscounting.github.io/",
+            "type": "live"
+        },
+        "description": "<p> This app is basically a Game. Built with Processing 3 and Android Java. This game will help children to learn about numbers. There are 7 stages. Each stage completed will resulting stars to be added to the score. For more information about the game, please visit the link above. </p> <p> Technologies used: <ul> <li>Android Java</li> <li>Processing 3</li> <li>Android Viewmodel</li> <li>Room DB</li> </ul> </p>"
+    },
+    {
+        "project_name": "MovieDB App",
+        "type": "android",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/MovieDB.png",
+        "source": {
+            "url": "https://github.com/mbaguszulmi/MovieDBApp",
+            "type": "git"
+        },
+        "description": "<p> In this app, you can view a list of movies and TV Shows. Every list item can be clicked to view the details of the movie or TV Show. In this project, I provide unit tests and Instrumentation tests to test the app. </p> <p> Technologies used: <ul> <li>Kotlin</li> <li>Android Architecture Pattern</li> <li>Hilt (Dagger 2)</li> <li>Unit test</li> <li>Instrumentation test</li> <li>Mockito</li> </ul> </p>"
+    },
+    {
+        "project_name": "Simpenduk",
+        "type": "android",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/Simpenduk.png",
+        "source": null,
+        "preview": null,
+        "description": "<p> Simpenduk is an Information system that is used to manage the data of the population in Indonesia. It has two parts, one is the Android App for filling data for every Family, and the other is the website for review the data and creating News. Also, we can view the latest news in the Android App. </p> <p> Website Features: <ul> <li>Dashboard</li> <li>Export data</li> <li>Review data</li> <li>Creating News</li> <li>REST API</li> <li>OCR API for KTP (Indonesian ID) and KK (Family Card)</li> </ul> Android App Features: <ul> <li>Sign up and Sign in</li> <li>Creating family Data</li> <li>Check data submission status</li> <li>Scanner for KTP and KK to change the image to be flatten like document scan</li> <li>Read the latest news</li> </ul> </p>"
+    },
+    {
+        "project_name": "React TODO",
+        "type": "web",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/ReactTodo.png",
+        "source": {
+            "url": "https://github.com/mbaguszulmi/react-todo",
+            "type": "git"
+        },
+        "preview": {
+            "url": "https://mbaguszulmi.github.io/react-todo/",
+            "type": "live"
+        },
+        "description": "<p> This app is developed using ReactJS and Redux. In this app, we can add, edit, and delete Todo list. Every Todo item can be checked. Learn more about this project in the github or preview links above. </p>"
+    },
+    {
         "project_name": "Global Bakery Android Apps",
         "type": "android",
         "status": "released",
