@@ -1,5 +1,14 @@
 [
     {
+        "project_name": "BOXI Express",
+        "type": "android",
+        "status": "released",
+        "thumbnail_url": "/assets/images/projects/Boxi.png",
+        "source": null,
+        "preview": null,
+        "description": "<p> In this project I hold the role of Android Developer and Web Developer. The main objective of this project is to manage the Air Waybills and Courier. The Courier can pickup the Package to the customer and change the status. I've implemented a Location Sync Service, so the User can also track the Courier location. </p> <h4>Preview</h4> <div class=\"youtube-frame-wrapper\"><iframe class=\"youtube-frame\" src=\"https://www.youtube.com/embed/CyZbxED1ukA\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div>"
+    },
+    {
         "project_name": "Let's Counting",
         "type": "android",
         "status": "released",
@@ -77,7 +86,7 @@
         "thumbnail_url": "/assets/images/projects/simseta.png",
         "source": null,
         "preview": {
-            "url": "https://simseta.mbaguszulmi.com/",
+            "url": "https://mbaguszulmi.github.io",
             "type": "live"
         },
         "description": "<p>This project is dedicated to my client for creating Recruitment management Information System in Banjarmasin Labor Department (Dinas Tenaga Kerja Banjarmasin). This project is created with CodeIgniter 4. Have 2 user roles, Admin and User (Worker Candidate). So Worker documents and requirements from Candidate will be selected by Admin.</p><p>You can try to register as worker candidate and login to admin with this credential:<br>admin:password</p>"
@@ -89,7 +98,7 @@
         "thumbnail_url": "/assets/images/projects/optimus.png",
         "source": null,
         "preview": {
-            "url": "https://optimus.mbaguszulmi.com/",
+            "url": "https://mbaguszulmi.github.io",
             "type": "live"
         },
         "description": "<p>This project is dedicated to my client for creating sales management Information System in CV. Optimus Glorious. This project is created with CodeIgniter 3. Have 2 user roles, Admin and Cashier.</p><p>You can try these with this credentials <br><ul><li>Admin<br>admin:admin</li><li>Cashier<br>kasir:kasir</li></ul></p>"

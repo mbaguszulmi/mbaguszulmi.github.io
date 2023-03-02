@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import born_icon from '../assets/images/birthday-cake.svg'
+// import born_icon from '../assets/images/birthday-cake.svg'
 import dot_progress from '../assets/images/dot_progress.svg'
 import mail_icon from '../assets/images/ic_round-mail.svg'
 import location_icon from '../assets/images/location_pin.svg'
@@ -57,9 +57,9 @@ class About extends Component {
                             <h3 className="card-title">About me</h3>
 
                             <p>
-                                I'm a professional Android and Web Developer. I graduated from
-                                Universitas Negeri Malang with Bachelor Degree of Engineering (S.T.) in
-                                Informatics Engineering Course. I Have experienced in many software
+                                I'm a professional Android and Web Developer. I graduated from 
+                                Universitas Negeri Malang with a Bachelor's Degree of Engineering (S.T.) 
+                                in Informatics Engineering Course. I Have experience in many software 
                                 development especially in Android and Web.
                             </p>
                         </div>
@@ -89,13 +89,13 @@ class About extends Component {
 
                                 <div className="content-item">
                                     <img src={web_icon} alt="location icon" />
-                                    <span>https://mbaguszulmi.com</span>
+                                    <span>https://mbaguszulmi.github.io</span>
                                 </div>
 
-                                <div className="content-item">
+                                {/* <div className="content-item">
                                     <img src={born_icon} alt="location icon" />
                                     <span>Born in Surabaya, November 10th 1998</span>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
@@ -115,7 +115,7 @@ class About extends Component {
                                     </div>
                                 </div>
 
-                                <div className="dot">
+                                <div className="dot last">
                                     <img src={dot_progress} alt="dot" />
                                 </div>
 
@@ -127,7 +127,7 @@ class About extends Component {
                                     </div>
                                 </div>
 
-                                <div className="dot last">
+                                {/* <div className="dot last">
                                     <img src={dot_progress} alt="dot" />
                                 </div>
 
@@ -136,7 +136,7 @@ class About extends Component {
                                     <div className="school-name">
                                         SMP Negeri 20 Surabaya
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -163,7 +163,62 @@ class About extends Component {
                                 </div>
 
                                 <div className="experience">
-                                    <div className="date">Mar 2021 - Present</div>
+                                    <div className="date">Mar 2022 - Present</div>
+                                    <div className="experience-place">Abacus.co | Senior Android Developer</div>
+                                    <div className="experience-description">
+                                        Abacus.co is one of the fastest growing Point Of Sale systems in Australia. They offer a high-quality product in POS and Online Ordering apps. As a Senior Android Developer, I am responsible for creating and maintaining Android apps to maintain their stability and quality. Our Android products can be found in the website.
+                                    </div>
+                                </div>
+
+                                <div className="dot">
+                                    <img src={dot_progress} alt="dot" />
+                                </div>
+
+                                <div className="experience">
+                                    <div className="date">Mar 2019 - Present</div>
+                                    <div className="experience-place">Freelance | Android and Web Developer</div>
+                                    <div className="experience-description">
+                                        <ul>
+                                            <li>
+                                                BOXI Express. In this project I hold the role of Android Developer and Web Developer. The main objective of this project is to manage the Air Waybills and Courier. The Courier can pickup the Package to the customer and change the status. I've implemented a Location Sync Service, so the User can also track the Courier location.
+                                            </li>
+                                            <li>
+                                                Vespa World Days 2022 Bali. As a mobile developer, I responsible to create an Android app for ticketing. It is an honor to be an important part of such a big international event.
+                                            </li>
+                                            <li>
+                                                Enhancing POS Information System for AHYPP (Astra Honda Youthpreneurship Program). Managing the SQL Query to speed up the execution time. Managing the CodeIgniter 3 Code to improve performance and security.
+                                            </li>
+                                            <li>
+                                                Enhancing Online Shop Admin IS, REST API, and Online Shop App (Flutter) for Taniqu. They offer products from Agricultural.
+                                            </li>
+                                            <li>
+                                                Maintaining Siginjai App for Polda Jambi (Android Native and Flutter), led by Illiyin Studio team.
+                                            </li>
+                                            <li>
+                                                Creating Education game "Let's counting" for helping children to learn about numbers
+                                            </li>
+                                            <li>
+                                                Fix and build Information System for Food order and delivery
+                                            </li>
+                                            <li>
+                                                Fix and build Information System for Kantor Urusan Agama Batu Ampar
+                                            </li>
+                                            <li>
+                                                Building Information System for Social and Worker Agency in Banjarmasin
+                                            </li>
+                                            <li>
+                                                Build Letter Archiver Information System using CodeIgniter
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className="dot">
+                                    <img src={dot_progress} alt="dot" />
+                                </div>
+
+                                <div className="experience">
+                                    <div className="date">Mar 2021 - Mar 2022</div>
                                     <div className="experience-place">Finfleet | IT Developer</div>
                                     <div className="experience-description">
                                         <ul>
@@ -178,40 +233,6 @@ class About extends Component {
                                             </li>
                                             <li>
                                                 Planning and Creating a Flutter Project for Monitoring Cleaning, attendance, and cash receipt
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div className="dot">
-                                    <img src={dot_progress} alt="dot" />
-                                </div>
-
-                                <div className="experience">
-                                    <div className="date">Mar 2019 - Present</div>
-                                    <div className="experience-place">Freelance | Android and Web Developer</div>
-                                    <div className="experience-description">
-                                        <ul>
-                                            <li>
-                                                Build Letter Archiver Information System using CodeIgniter
-                                            </li>
-                                            <li>
-                                                Building Information System for Social and Worker Agency in Banjarmasin
-                                            </li>
-                                            <li>
-                                                Fix and build Information System for Kantor Urusan Agama Batu Ampar
-                                            </li>
-                                            <li>
-                                                Fix and build Information System for Food order and delivery
-                                            </li>
-                                            <li>
-                                                Creating Education game "Let's counting" for helping children to learn about numbers
-                                            </li>
-                                            <li>
-                                                Maintaining Siginjai App for Polda Jambi (Android Native and Flutter), led by Illiyin Studio team.
-                                            </li>
-                                            <li>
-                                                Enhancing Online Shop Admin IS, REST API, and Online Shop App (Flutter) for Taniqu. They offer products from Agricultural.
                                             </li>
                                         </ul>
                                     </div>

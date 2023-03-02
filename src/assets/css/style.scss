@@ -54,10 +54,11 @@ body {
         top: -70px;
         z-index: 999;
 
-        &, * {
+        &,
+        * {
             transition: .3s ease-in-out
         }
-        
+
         &.show {
             top: 0;
         }
@@ -121,7 +122,7 @@ body {
 
                 img {
                     max-width: 46px;
-                    max-height:46px;
+                    max-height: 46px;
                 }
             }
 
@@ -184,8 +185,8 @@ body {
             width: 100%;
             height: 100vh;
             left: 0;
-            background: rgba(0,0,0,0.3);
-            
+            background: rgba(0, 0, 0, 0.3);
+
             div.nav-drawer {
                 width: 230px;
                 background-color: white;
@@ -228,7 +229,7 @@ body {
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-    
+
                 div.my-avatar {
                     width: 200px;
                     height: 200px;
@@ -240,7 +241,7 @@ body {
                         height: 150px;
                     }
                 }
-    
+
                 h1.my-name {
                     font-weight: normal;
                     font-size: 30px;
@@ -251,13 +252,13 @@ body {
                         text-align: center;
                     }
                 }
-    
+
                 p.description {
                     font-size: 18px;
                     color: #5C5C5C;
                     margin: 5px 0 20px;
                 }
-    
+
                 img.btn-down {
                     margin-top: 60px;
                     width: 80px;
@@ -270,13 +271,13 @@ body {
                     }
                 }
             }
-    
+
             section.about-me-section {
                 width: 100%;
                 min-height: 100vh;
                 background: linear-gradient(106.85deg, #E2B38C -15.46%, #A363CB 99.68%);
                 position: relative;
-    
+
                 div.bg {
                     background: center right / cover url('../images/pearl.jpg');
                     width: 100%;
@@ -284,7 +285,7 @@ body {
                     position: absolute;
                     opacity: .2;
                 }
-    
+
                 div.about-me-content-wrapper {
                     max-width: 1200px;
                     padding: 20px;
@@ -294,13 +295,13 @@ body {
                     flex-direction: column;
                     justify-content: center;
                     position: relative;
-    
+
                     div.about-me-content {
                         max-width: 754px;
                         background-color: #fff;
                         border-radius: 20px;
                         padding: 40px;
-    
+
                         p {
                             font-size: 24px;
                             font-weight: normal;
@@ -314,7 +315,7 @@ body {
                     }
                 }
             }
-    
+
             section.recent-project-section {
                 min-height: 100vh;
                 width: 100%;
@@ -322,7 +323,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-    
+
                 h2.section-title {
                     font-size: 40px;
                     font-weight: 600;
@@ -335,27 +336,27 @@ body {
                         font-size: 30px;
                     }
                 }
-    
+
                 div.slider {
                     width: 100%;
                     overflow-x: auto;
                     scrollbar-width: none;
-    
+
                     &::-webkit-scrollbar {
                         width: 0;
                     }
-    
+
                     div.slider-inner {
                         padding: 0 calc((100% - 1200px) / 2);
                         width: max-content;
-    
+
                         div.slider-content {
                             padding: 20px 20px;
                             width: max-content;
                             margin-top: 64px;
                             display: flex;
                             flex-direction: row;
-    
+
                             a.project-card {
                                 flex-shrink: 0;
                                 margin-right: 30px;
@@ -414,10 +415,10 @@ body {
                             max-width: 460px;
                         }
                     }
-    
+
                     div.card {
                         max-width: 754px;
-    
+
                         p {
                             color: #5C5C5C;
                             font-size: 24px;
@@ -823,7 +824,8 @@ body {
                         flex: 3;
                     }
 
-                    &::before, &::after {
+                    &::before,
+                    &::after {
                         flex: 1;
                         content: "";
                         width: 100%;
@@ -861,7 +863,7 @@ body {
                     h3.footer-title {
                         font-size: 24px;
                     }
-                    
+
                     &.logo {
                         display: flex;
                         justify-content: center;
@@ -996,7 +998,7 @@ a.project-card {
         padding-top: 56.25%;
         background-size: cover;
         background-position: center;
-        
+
         div.label {
             position: absolute;
             top: 0;
@@ -1041,6 +1043,21 @@ a.project-card {
         padding: 0 20px;
         overflow: hidden;
         color: #000;
+    }
+}
+
+div.youtube-frame-wrapper {
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+    overflow: hidden;
+
+    .youtube-frame {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 }
 
