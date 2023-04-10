@@ -1,5 +1,20 @@
 [
     {
+        "name": "Dicoding AWS Cloud Practitioner",
+        "given_by": "Dicoding",
+        "url": "/assets/images/certificates/dicoding_aws.jpg"
+    },
+    {
+        "name": "Dicoding Back-End for Beginer",
+        "given_by": "Dicoding",
+        "url": "/assets/images/certificates/dicoding_be_beginer.jpg"
+    },
+    {
+        "name": "Dicoding Javascript for Beginer",
+        "given_by": "Udemy",
+        "url": "/assets/images/certificates/dicoding_js_beginer.jpg"
+    },
+    {
         "name": "Go: The Complete Developer's Guide",
         "given_by": "Udemy",
         "url": "/assets/images/certificates/udemy_go-complete-developers-guide.jpg"
